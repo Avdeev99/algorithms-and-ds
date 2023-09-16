@@ -5,7 +5,8 @@ namespace ConsoleApp1.ArraysAndHashing.Easy;
 public class WordPattern
 {
     // Time complexity: O(n); Space complexity: O(n).
-    public bool IsWordPattern(string pattern, string s) {
+    public bool IsWordPattern(string pattern, string s)
+    {
         var words = s.Split(' ');
 
         if (words.Length != pattern.Length)
