@@ -4,6 +4,7 @@ namespace ConsoleApp1.SortingAlgorithms
 {
     public class MergeSortAlgorithm
     {
+        // Time complexity: O(nlog(n)); Space complexity: O(n)
         public static int[] MergeSort(int[] arr)
         {
             if (arr.Length == 1)

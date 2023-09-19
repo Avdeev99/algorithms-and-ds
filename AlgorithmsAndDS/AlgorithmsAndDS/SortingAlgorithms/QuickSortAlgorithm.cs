@@ -2,6 +2,7 @@
 
 public class QuickSortAlgorithm
 {
+    // Time complexity: O(nlog(n)); Space complexity: O(log(n))
     public static int[] QuickSort(int[] arr, int leftIndex, int rightIndex)
     {
         if (leftIndex < rightIndex)
