@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApp1.Helpers;
 
 namespace ConsoleApp1.BlindSpot75;
 

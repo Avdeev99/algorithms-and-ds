@@ -1,10 +1,12 @@
 ﻿using System.Linq;
+using ConsoleApp1.Helpers;
 
-namespace ConsoleApp1.BlindSpot75;
+namespace ConsoleApp1.Trees.Easy;
 
-public static class ConvertSortedArrayToBinarySearchTree
+public class ConvertSortedArrayToBinarySearchTree
 {
-    public static TreeNode SortedArrayToBST(int[] nums) {
+    // Time complexity: O(n); Space complexity: O(log(n)) - height of a tree.
+    public TreeNode SortedArrayToBST(int[] nums) {
         if (nums.Length == 0)
         {
             return null;
@@ -17,7 +19,7 @@ public static class ConvertSortedArrayToBinarySearchTree
         };
 
         var leftSide = nums.Take(middleIndex).ToArray();
-        var rightSide = nums.Skip(middleIndex + 1).ToArray();
+        var rightSide = nums.Skip(middleIndex+1).ToArray();
 
         node.left = SortedArrayToBST(leftSide);
         node.right = SortedArrayToBST(rightSide);
