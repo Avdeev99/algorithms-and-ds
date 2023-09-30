@@ -8,6 +8,7 @@ public class MinimumDistanceBetweenBSTNodes
     private int minDiff = int.MaxValue;
     private TreeNode prevNode = null;
 
+    // Time complexity: O(n); Space complexity: O(n).
     public int MinDiffInBST(TreeNode root)
     {
         if (root.left != null)
