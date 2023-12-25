@@ -1,4 +1,4 @@
-# LeetCode Problem Solutions in C**#**
+# LeetCode Problem Solutions in C#
 
 ## Introduction
 🚀 Welcome to my LeetCode Problem Solutions repository! Ready to embark on a coding adventure? You're in the right place!
@@ -7,11 +7,9 @@ If you find this repository helpful, please consider giving it a ⭐️!
 
 ## Table of Contents
 
-- [Arrays](#arrays-&-hashing)
+- [Arrays & Hashing](#arrays-&-hashing)
 - [Two Pointers](#two-pointers)
 - [Sliding Window](#sliding-window)
-- [Arrays](#arrays)
-- [Etc.](#etc)
 
 ## Arrays & Hashing
 
