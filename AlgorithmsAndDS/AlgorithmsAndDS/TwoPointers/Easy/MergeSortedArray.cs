@@ -1,8 +1,9 @@
 ﻿namespace ConsoleApp1.TwoPointers.Easy;
 
+// 88. Merge Sorted Array
 public class MergeSortedArray
 {
-    // Time complexity: O(n); Space complexity: O(1).
+    // Time complexity: O(n + m); Space complexity: O(1).
     public void Merge(int[] nums1, int m, int[] nums2, int n)
     {
         var i = m - 1;
