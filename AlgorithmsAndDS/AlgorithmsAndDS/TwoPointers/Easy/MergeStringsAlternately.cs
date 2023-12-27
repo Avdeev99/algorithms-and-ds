@@ -2,6 +2,7 @@
 
 namespace ConsoleApp1.TwoPointers.Easy;
 
+// 1768. Merge Strings Alternately
 public class MergeStringsAlternately
 {
     // Time complexity: O(n); Space complexity: O(n+m).
