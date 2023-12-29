@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp1.BinarySearch.Easy;
 
+// 374. Guess Number Higher or Lower
 public class GuessNumberHigherOrLower
 {
     // Time complexity: O(log(n)); Space complexity: O(1).

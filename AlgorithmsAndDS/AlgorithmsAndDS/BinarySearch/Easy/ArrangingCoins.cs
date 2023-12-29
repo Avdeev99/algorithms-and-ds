@@ -2,10 +2,34 @@
 
 namespace ConsoleApp1.BinarySearch.Easy;
 
+// 441. Arranging Coins
 public class ArrangingCoins
 {
     // Time complexity: O(log(n)); Space complexity: O(1).
     public int ArrangeCoins(int n)
+    {
+        var l = 0;
+        var r = n;
+
+        while (l <= r)
+        {
+            var mid = l + (r - l) / 2;
+            var sum = (double)mid / 2 * (mid + 1);
+
+            if (sum == n)
+                return mid;
+
+            if (sum > n)
+                r = mid - 1;
+            else
+                l = mid + 1;
+        }
+
+        return r;   
+    }
+    
+    // Time complexity: O(log(n)); Space complexity: O(1).
+    public int ArrangeCoins2(int n)
     {
         var left = 0;
         var right = n;
@@ -29,19 +53,5 @@ public class ArrangingCoins
         }
 
         return result;
-    }
-
-    // Time complexity: O(n); Space complexity: O(1).
-    public int ArrangeCoins2(int n)
-    {
-        var row = 0;
-
-        while (n >= 0)
-        {
-            row++;
-            n -= row;
-        }
-
-        return row - 1;
     }
 }

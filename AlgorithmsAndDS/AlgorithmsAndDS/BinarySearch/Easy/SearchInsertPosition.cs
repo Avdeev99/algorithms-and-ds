@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp1.BinarySearch.Easy;
 
+// 35. Search Insert Position
 public class SearchInsertPosition
 {
     // Time complexity: O(log(n)); Space complexity: O(1).

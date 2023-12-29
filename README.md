@@ -11,6 +11,8 @@
 - [Two Pointers](#two-pointers)
 - [Sliding Window](#sliding-window)
 - [Stack](#stack)
+- [Binary Search](#binary-search)
+- [Linked List](#linked-list)
 
 ## Arrays & Hashing
 
@@ -46,3 +48,19 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [20. Valid Parentheses](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Easy/ValidParentheses.cs) | Easy | O(n) | O(n) | - Push open braces to stack <br /> - If current item is closing breace, it should be the same type as top of the stack  <br /> - If it's true pop value and continue, otherwise - false |
+| [682. Baseball Game](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Easy/BaseballGame.cs) | Easy | O(n) | O(n) | - Push digits to stack <br /> - During operation, pop items, modify stack, calculateresult |
+
+## Binary Search
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [35. Search Insert Position](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Easy/SearchInsertPosition.cs) | Easy | O(log(n)) | O(1) | - Binary search while l <= r <br /> - Insert position will be left pointer |
+| [704. Binary Search](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Easy/BinarySearch.cs) | Easy | O(log(n)) | O(1) | - Two pointers (start, end) in sorted array <br /> - Calculate mid, if mid == target than return <br /> - Update left or right pointer according to mid |
+| [374. Guess Number Higher or Lower](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Easy/GuessNumberHigherOrLower.cs) | Easy | O(log(n)) | O(1) | - Binary search while l <= r <br /> - To compare mid value use guess function |
+| [441. Arranging Coins](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Easy/ArrangingCoins.cs) | Easy | O(log(n)) | O(1) | - Binary search while start <= end <br /> - Calculate sum of range 1...mid using formula: S = (n/2) * (1 + n) <br /> - Compare sum and n and update pointers <br /> - Since at the end start > end, start will start pointing to a value greater than the desired result. Return end as it will point to the correct value. |
+
+## Linked List
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [206. Reverse Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/ReverseLinkedList.cs) | Easy | O(n) | O(1) | Create two nodes, prev = null, curr = head <br /> - Iterate while curr != null and reverse pointers to prev node <br /> - Return prev node as new head |

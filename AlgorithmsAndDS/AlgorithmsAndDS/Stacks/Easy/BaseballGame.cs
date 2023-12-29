@@ -2,6 +2,7 @@
 
 namespace ConsoleApp1.Stacks.Easy;
 
+// 682. Baseball Game
 public class BaseballGame
 {
     // Time complexity: O(n); Space complexity: O(n).
