@@ -2,6 +2,7 @@
 
 namespace ConsoleApp1.LinkedLists.Easy;
 
+// 160. Intersection of Two Linked Lists
 public class IntersectionOfTwoLinkedLists
 {
     // Time complexity: O(n + m); Space complexity: O(1).

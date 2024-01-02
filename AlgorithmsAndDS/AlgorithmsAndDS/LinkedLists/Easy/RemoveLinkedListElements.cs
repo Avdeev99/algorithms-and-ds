@@ -2,6 +2,7 @@
 
 namespace ConsoleApp1.LinkedLists.Easy;
 
+// 203. Remove Linked List Elements
 public class RemoveLinkedListElements
 {
     // Time complexity: O(n); Space complexity: O(1).

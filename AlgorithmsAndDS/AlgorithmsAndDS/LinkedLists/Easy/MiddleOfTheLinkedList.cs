@@ -2,6 +2,7 @@
 
 namespace ConsoleApp1.LinkedLists.Easy;
 
+// 876. Middle of the Linked List
 public class MiddleOfTheLinkedList
 {
     // Time complexity: O(n); Space complexity: O(1).

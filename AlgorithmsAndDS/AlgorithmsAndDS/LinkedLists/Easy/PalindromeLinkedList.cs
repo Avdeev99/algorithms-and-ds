@@ -2,6 +2,7 @@
 
 namespace ConsoleApp1.LinkedLists.Easy;
 
+// 234. Palindrome Linked List
 public class PalindromeLinkedList
 {
     // Time complexity: O(n); Space complexity: O(1).
@@ -9,33 +10,35 @@ public class PalindromeLinkedList
     {
         var slow = head;
         var fast = head;
+
         while (fast != null && fast.next != null)
         {
             slow = slow.next;
-            fast = fast.next.next;
+            fast = fast?.next?.next;
         }
 
-        var previous = slow;
-        slow = slow.next;
-        previous.next = null;
+        ListNode prev = null;
+        var curr = slow;
 
         // reverse second part of the list
-        while (slow != null)
+        while (curr != null)
         {
-            var temp = slow.next;
-            slow.next = previous;
-            previous = slow;
-            slow = temp;
+            var temp = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = temp;
         }
 
-        fast = head;
-        slow = previous;
+        var start = head;
+        var end = prev;
 
-        while (slow != null)
+        while (end != null && start != null)
         {
-            if (slow.val != fast.val) return false;
-            fast = fast.next;
-            slow = slow.next;
+            if (end.val != start.val)
+                return false;
+
+            start = start.next;
+            end = end.next;
         }
 
         return true;
