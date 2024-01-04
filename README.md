@@ -18,10 +18,14 @@
 
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
-| [217. Contains Duplicate](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ContainsDuplicate.cs) | Easy | O(N) | O(N) | - Write values to **Hash Set** <br /> - If already exists - true, otherwise - false |
-| [242. Valid Anagram](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ValidAnagram.cs) | Easy | O(N) | O(N) | - Save counts of chars of s1 in **Dict** <br /> - Iterate s2, check that every char exists in dict and decrease count <br /> - Iterate Dict and check that all count = 0 |
-| [290. Word Pattern](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/IsSubsequence.cs) | Easy | O(N) | O(1) | - Hint |
-| [392. Is Subsequence](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/WordPattern.cs) | Easy | O(N) | O(N) | - Use two indexes for interation s1 and s2. <br /> - Iterate s1 index when chars equals |
+| [1. Two Sum](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/TwoSum.cs) | Easy | O(n) | O(n) | Calculate diff between curr item and target and store it and index in **Dict** <br /> - If curr item is in dict, then itis the result |
+| [14. Longest Common Prefix](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/LongestCommonPrefix.cs) | Easy | O(mn) | O(k) | - Iterate through all chars in first str (outer for) <br /> - Iterate through all strings and compare chars (inner for) <br /> - If you don't reach end of some str and chars are equal, add it to the prefix (after comparing char in all strs) |
+| [58. Length of Last Word](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/LengthOfLastWord.cs) | Easy | O(n) | O(1) | - Iterate from the end and count non-space chars <br /> - The last word will end when counter > 0 and you reach space char |
+| [118. Pascal's Triangle](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/PascalsTriangle.cs) | Easy | O(n^2) | O(n^2) | - First and last items of each row = 1 <br /> - Other j item in i row = arr[i-1][j-1] + arr[i-1][j] |
+| [217. Contains Duplicate](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ContainsDuplicate.cs) | Easy | O(n) | O(n) | - Write values to **Hash Set** <br /> - If already exists - true, otherwise - false |
+| [242. Valid Anagram](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ValidAnagram.cs) | Easy | O(n) | O(n) | - Save counts of chars of s1 in **Dict** <br /> - Iterate s2, check that every char exists in dict and decrease count <br /> - Iterate Dict and check that all count = 0 |
+| [290. Word Pattern](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/IsSubsequence.cs) | Easy | O(n) | O(1) | - Hint |
+| [392. Is Subsequence](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/WordPattern.cs) | Easy | O(n) | O(n) | - Use two indexes for interation s1 and s2. <br /> - Iterate s1 index when chars equals |
 | [1299. Replace Elements with Greatest Element on Right Side](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ReplaceElementsWithGreatestElementOnRightSide.cs) | Easy | O(N) | O(N) | - For the last iten, greatest = -1, for second from end = last item <br /> - Iterate array from end, set greatest (at first is last item) <br /> - Update greatest var if current is greater |
 | [1929. Concatenation of Array](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ConcatenationOfArray.cs) | Easy | O(N) | O(N) | - Create array with n*2 length <br /> - Fill values to i and i+n positions |
 
@@ -30,6 +34,7 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [26. Remove Duplicates from Sorted Array](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/RemoveDuplicatesFromSortedArray.cs) | Easy | O(n) | O(1) | - Maintain index to replace <br /> - Next item should be greater then previous |
+| [27. Remove Element](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/RemoveDuplicatesFromSortedArray.cs) | Easy | O(n) | O(1) | - Use two pointers (start, end) <br /> - If you find value - swap start and end values and decrease end pointer, otherwise - increase start pointer  |
 | [88. Merge Sorted Array](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/MergeSortedArray.cs) | Easy | O(n+m) | O(1) | - Merge arrays in reverse order <br /> - Three pointers (last item of arr1, last item of arr2, last item of result arr)  <br /> - Compare values |
 | [125. Valid Palindrome](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/ValidPalindrome.cs) | Easy | O(N) | O(1) | - Two pointers (start, end) <br /> - Move each pointer untill value will be letter or digit  <br /> - If values are not equal - return false |
 | [283. Move Zeroes](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/MoveZeroes.cs) | Easy | O(N) | O(1) | - Maintain index to replace <br /> - Iterate array, swap non zero value with index to replace position  <br /> - Update index to replace |
