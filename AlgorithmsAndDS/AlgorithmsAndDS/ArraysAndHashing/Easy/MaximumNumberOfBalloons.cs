@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace ConsoleApp1.ArraysAndHashing.Easy;
 
+// 1189. Maximum Number of Balloons
 public class MaximumNumberOfBalloons
 {
     // Time complexity: O(n); Space complexity: O(n).
@@ -25,7 +26,7 @@ public class MaximumNumberOfBalloons
 
         var result = dict['b'].totalCount / dict['b'].countInWord;
 
-        foreach (var (key, val) in dict)
+        foreach (var (_, val) in dict)
         {
             var count = val.totalCount / val.countInWord;
             result = Math.Min(count, result);

@@ -2,6 +2,7 @@
 
 namespace ConsoleApp1.ArraysAndHashing.Easy;
 
+// 290. Word Pattern
 public class WordPattern
 {
     // Time complexity: O(n); Space complexity: O(n).
