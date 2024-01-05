@@ -13,6 +13,7 @@
 - [Stack](#stack)
 - [Binary Search](#binary-search)
 - [Linked List](#linked-list)
+- [Hints](#hints)
 
 ## Arrays & Hashing
 
@@ -26,8 +27,11 @@
 | [217. Contains Duplicate](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ContainsDuplicate.cs) | Easy | O(n) | O(n) | - Write values to **Hash Set** <br /> - If already exists - true, otherwise - false |
 | [242. Valid Anagram](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ValidAnagram.cs) | Easy | O(n) | O(n) | - Save counts of chars of s1 in **Dict** <br /> - Iterate s2, check that every char exists in dict and decrease count <br /> - Iterate Dict and check that all count = 0 |
 | [290. Word Pattern](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/IsSubsequence.cs) | Easy | O(n) | O(1) | - Hint |
+| [303. Range Sum Query - Immutable](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/IsSubsequence.cs) | Easy | Constructor: O(n) <br /> SumRange: O(1) | Constructor: O(n) <br /> SumRange: O(1) | - Calulate prefix sums (left side + curr)  <br /> - Range sum = prefixSums[ right ] - prefixSums[ left-1 ] |
 | [392. Is Subsequence](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/WordPattern.cs) | Easy | O(n) | O(n) | - Use two indexes for interation s1 and s2. <br /> - Iterate s1 index when chars equals |
+| [448. Find All Numbers Disappeared in an Array](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/FindAllNumbersDisappearedInArray.cs) | Easy | O(n) | O(1) | - Iterate through array and mark item position (nums[ i ] - 1) as negative, use Abs <br /> - Positions that are postive - missed numbers (index + 1) |
 | [605. Can Place Flowers](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/CanPlaceFlowers.cs) | Easy | O(n) | O(1) | - Iterate if previous, current, next place = 0 - place flower  |
+| [724. Find Pivot Index](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/FindPivotIndex.cs) | Easy | O(n) | O(1) | - Calculate total sum <br /> - Iterate array from start and calculate left side sum <br /> - Right side sum = total - left - curr <br /> - Compare left and right sums |
 | [929. Unique Email Addresses](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/UniqueEmailAddresses.cs) | Easy | O(nm) | O(n) | - Normalize each email, using split and replace <br /> - Add each unique email to **Hash Set** and return set count |
 | [1299. Replace Elements with Greatest Element on Right Side](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ReplaceElementsWithGreatestElementOnRightSide.cs) | Easy | O(N) | O(N) | - For the last iten, greatest = -1, for second from end = last item <br /> - Iterate array from end, set greatest (at first is last item) <br /> - Update greatest var if current is greater |
 | [1929. Concatenation of Array](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ConcatenationOfArray.cs) | Easy | O(N) | O(N) | - Create array with n*2 length <br /> - Fill values to i and i+n positions |
@@ -79,3 +83,9 @@
 | [206. Reverse Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/ReverseLinkedList.cs) | Easy | O(n) | O(1) | Create two nodes, prev = null, curr = head <br /> - Iterate while curr != null and reverse pointers to prev node <br /> - Return prev node as new head |
 | [234. Palindrome Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/PalindromeLinkedList.cs) | Easy | O(n) | O(1) | - Slow and fast pointer while fast?.next != null (slow pointer will be the middle) <br /> - Reverse second part of the list  <br /> - Compare values from start and end |
 | [876. Middle of the Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/MiddleOfTheLinkedList.cs) | Easy | O(n) | O(1) | Use slow and fast (2 x slow) pointers while fast?.next != null <br /> - Slow pointer will be the middle in the end |
+
+## Hints
+
+- Find range sum/sum in array - prefix/postfix sum of array
+- Find item in sorted array - binary search
+- Move or remove elements in array - two pointers

@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp1.ArraysAndHashing.Easy;
 
+// 303. Range Sum Query - Immutable
 public class RangeSumQueryImmutable
 {
     private readonly int[] _prefixSums;
@@ -7,13 +8,7 @@ public class RangeSumQueryImmutable
     // Time complexity: O(n); Space complexity: O(n).
     public RangeSumQueryImmutable(int[] nums)
     {
-        _prefixSums = new int[nums.Length];
-        var sum = 0;
-        for (var i = 0; i < nums.Length; i++)
-        {
-            sum += nums[i];
-            _prefixSums[i] = sum;
-        }
+        _prefixSums = GetPrefixSums(nums);
     }
     
     // Time complexity: O(1); Space complexity: O(1).
@@ -23,5 +18,19 @@ public class RangeSumQueryImmutable
         var leftVal = left > 0 ? _prefixSums[left - 1] : 0;
 
         return rightVal - leftVal;
+    }
+    
+    private int[] GetPrefixSums(int[] nums)
+    {
+        var result = new int[nums.Length];
+        var prefixSum = 0;
+
+        for (var i = 0; i < nums.Length; i++)
+        {
+            prefixSum += nums[i];
+            result[i] = prefixSum;
+        }
+
+        return result;
     }
 }

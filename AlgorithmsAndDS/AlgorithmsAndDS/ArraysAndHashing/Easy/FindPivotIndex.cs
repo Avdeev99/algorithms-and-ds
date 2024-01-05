@@ -2,10 +2,11 @@
 
 namespace ConsoleApp1.ArraysAndHashing.Easy;
 
-public static class FindPivotIndex
+// 724. Find Pivot Index
+public class FindPivotIndex
 {
     // Time complexity: O(n); Space complexity: O(1)
-    public static int PivotIndex(int[] nums)
+    public int PivotIndex(int[] nums)
     {
         var totalSum = nums.Sum();
         var leftSum = 0;
@@ -23,27 +24,24 @@ public static class FindPivotIndex
     }
     
     // Time complexity: O(n); Space complexity: O(n)
-    public static int PivotIndex2(int[] nums)
+    public int PivotIndex2(int[] nums)
     {
-        var postfixSums = new int[nums.Length];
-        var postfixSum = 0;
+        var rightSideSums = new int[nums.Length];
+        var rightSideSum = 0;
 
-        for (var i = nums.Length - 2; i >= 0; i--)
+        for (var i = nums.Length - 1; i >= 0; i--)
         {
-            postfixSum += nums[i+1];
-            postfixSums[i] = postfixSum;
+            rightSideSums[i] = rightSideSum;
+            rightSideSum += nums[i];
         }
 
-        var prefixSum = 0;
+        var leftSideSum = 0;
 
         for (var i = 0; i < nums.Length; i++)
         {
-            if (i != 0)
-            {
-                prefixSum += nums[i-1];
-            }
+            if (leftSideSum == rightSideSums[i]) return i;
 
-            if (prefixSum == postfixSums[i]) return i;
+            leftSideSum += nums[i];
         }
 
         return -1;
