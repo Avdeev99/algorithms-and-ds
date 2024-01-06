@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp1.ArraysAndHashing.Easy;
 
+// 1822. Sign of the Product of an Array
 public class SignOfTheProductOfArray
 {
     // Time complexity: O(n); Space complexity: O(1).

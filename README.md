@@ -21,8 +21,10 @@
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [1. Two Sum](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/TwoSum.cs) | Easy | O(n) | O(n) | Calculate diff between curr item and target and store it and index in **Dict** <br /> - If curr item is in dict, then itis the result |
 | [14. Longest Common Prefix](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/LongestCommonPrefix.cs) | Easy | O(mn) | O(k) | - Iterate through all chars in first str (outer for) <br /> - Iterate through all strings and compare chars (inner for) <br /> - If you don't reach end of some str and chars are equal, add it to the prefix (after comparing char in all strs) |
+| [28. Find the Index of the First Occurrence in a String](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/) | Easy | O(mn) | O(1) | |
 | [58. Length of Last Word](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/LengthOfLastWord.cs) | Easy | O(n) | O(1) | - Iterate from the end and count non-space chars <br /> - The last word will end when counter > 0 and you reach space char |
 | [118. Pascal's Triangle](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/PascalsTriangle.cs) | Easy | O(n^2) | O(n^2) | - First and last items of each row = 1 <br /> - Other j item in i row = arr[i-1][j-1] + arr[i-1][j] |
+| [169. Majority Element](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/MajorityElement.cs) | Easy | O(n) | O(1) | - Boyer-Moore algorithm <br /> - Set first item as major, create counter <br /> - Iterate array, if curr == major - increase counter, otherwise - decrease <br /> - If counter == 0, reassign major = curr |
 | [205. Isomorphic Strings](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/IsomorphicStrings.cs) | Easy | O(n) | O(n) | - Use two **Dict** to store s->t and t->s mappings <br /> - Iterate through string, if character exists in dict, check that mapping value is correct, else - add to dict (check this for both mappings dictionaries) |
 | [217. Contains Duplicate](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ContainsDuplicate.cs) | Easy | O(n) | O(n) | - Write values to **Hash Set** <br /> - If already exists - true, otherwise - false |
 | [242. Valid Anagram](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ValidAnagram.cs) | Easy | O(n) | O(n) | - Save counts of chars of s1 in **Dict** <br /> - Iterate s2, check that every char exists in dict and decrease count <br /> - Iterate Dict and check that all count = 0 |
@@ -35,7 +37,10 @@
 | [929. Unique Email Addresses](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/UniqueEmailAddresses.cs) | Easy | O(nm) | O(n) | - Normalize each email, using split and replace <br /> - Add each unique email to **Hash Set** and return set count |
 | [1189. Maximum Number of Balloons](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/MaximumNumberOfBalloons.cs) | Easy | O(n) | O(n) | - Count the frequency of letters in given string and store in **Dict** <br /> - Iterate through dict, possible count = total frequency / freq in word; return minimum count |
 | [1299. Replace Elements with Greatest Element on Right Side](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ReplaceElementsWithGreatestElementOnRightSide.cs) | Easy | O(N) | O(N) | - For the last iten, greatest = -1, for second from end = last item <br /> - Iterate array from end, set greatest (at first is last item) <br /> - Update greatest var if current is greater |
+| [1603. Design Parking System](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ParkingSystem.cs) | Easy | O(1) | O(n) | - Use array with three items, each item - parking places count for specific type |
+| [1822. Sign of the Product of an Array](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/SignOfTheProductOfArray.cs) | Easy | O(N) | O(1) | - Do not multiply values, just create var = 1, multiply to -1 if nums[ i ] < 0 or return 0 if nums[ i ] = 0 |
 | [1929. Concatenation of Array](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/ConcatenationOfArray.cs) | Easy | O(N) | O(N) | - Create array with n*2 length <br /> - Fill values to i and i+n positions |
+| [2215. Find the Difference of Two Arrays](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/FindTheDifferenceOfTwoArrays.cs) | Easy | O(n+m) | O(n+m) | - Convert arrays to **Hash Sets** <br /> - Check existence for both nums1 and nums2 |
 
 ## Two Pointers
 
@@ -90,3 +95,7 @@
 - Find range sum/sum in array - prefix/postfix sum of array
 - Find item in sorted array - binary search
 - Move or remove elements in array - two pointers
+
+## Algorithms
+
+- Boyer-Moore
