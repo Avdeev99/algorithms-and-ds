@@ -13,6 +13,7 @@
 - [Stack](#stack)
 - [Binary Search](#binary-search)
 - [Linked List](#linked-list)
+- [Trees][#trees]
 - [Hints](#hints)
 
 ## Arrays & Hashing
@@ -89,6 +90,16 @@
 | [206. Reverse Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/ReverseLinkedList.cs) | Easy | O(n) | O(1) | Create two nodes, prev = null, curr = head <br /> - Iterate while curr != null and reverse pointers to prev node <br /> - Return prev node as new head |
 | [234. Palindrome Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/PalindromeLinkedList.cs) | Easy | O(n) | O(1) | - Slow and fast pointer while fast?.next != null (slow pointer will be the middle) <br /> - Reverse second part of the list  <br /> - Compare values from start and end |
 | [876. Middle of the Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/MiddleOfTheLinkedList.cs) | Easy | O(n) | O(1) | Use slow and fast (2 x slow) pointers while fast?.next != null <br /> - Slow pointer will be the middle in the end |
+
+## Trees
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [94. Binary Tree Inorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreeInorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any || currNode != null) <br /> - If currNode != null - push node to stack, go left  <br /> - If currNode == null - get prevNode from stack, add value to result,go the prevNode.right |
+| [104. Maximum Depth of Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/MaximumDepthOfBinaryTree.cs) | Easy | O(n) | O(n) | - DFS iterative - use stack to store nodes and depth <br /> - BFS iterative - use queue to count levels <br /> - Recursion - return Max of recursive calls of left and right children + 1 |
+| [144. Binary Tree Preorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePreorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any || currNode != null) <br /> - If currNode != null - add value to result, push currNode.right to stack, go left  <br /> - If currNode == null - currNode = node from stack |
+| [145. Binary Tree Postorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePostorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any) to store node ond visited flag, push rootto stack <br /> - Pop from stack, if visited - add to result, otherwise - push curr as visited, left and right as not visited to stack |
+| [226. Invert Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePostorderTraversal.cs) | Easy | O(n) | O(n) | - Check null, swap left and right children, recursive call for both left and right child |
 
 ## Hints
 

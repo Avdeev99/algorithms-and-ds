@@ -4,6 +4,7 @@ using ConsoleApp1.Helpers;
 
 namespace ConsoleApp1.Trees.Easy;
 
+// 94. Binary Tree Inorder Traversal
 public class BinaryTreeInorderTraversal
 {
     // Time complexity: O(n); Space complexity: O(n).
