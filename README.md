@@ -13,7 +13,7 @@
 - [Stack](#stack)
 - [Binary Search](#binary-search)
 - [Linked List](#linked-list)
-- [Trees][#trees]
+- [Trees](#trees)
 - [Hints](#hints)
 
 ## Arrays & Hashing
@@ -96,10 +96,14 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [94. Binary Tree Inorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreeInorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any || currNode != null) <br /> - If currNode != null - push node to stack, go left  <br /> - If currNode == null - get prevNode from stack, add value to result,go the prevNode.right |
+
+| [100. Same Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/SameTree.cs) | Easy | O(n) | O(n) | Check that values of trees nodes are equal, use recursion to repeat for each node (left and right) |
+
 | [104. Maximum Depth of Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/MaximumDepthOfBinaryTree.cs) | Easy | O(n) | O(n) | - DFS iterative - use stack to store nodes and depth <br /> - BFS iterative - use queue to count levels <br /> - Recursion - return Max of recursive calls of left and right children + 1 |
 | [144. Binary Tree Preorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePreorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any || currNode != null) <br /> - If currNode != null - add value to result, push currNode.right to stack, go left  <br /> - If currNode == null - currNode = node from stack |
 | [145. Binary Tree Postorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePostorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any) to store node ond visited flag, push rootto stack <br /> - Pop from stack, if visited - add to result, otherwise - push curr as visited, left and right as not visited to stack |
 | [226. Invert Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePostorderTraversal.cs) | Easy | O(n) | O(n) | - Check null, swap left and right children, recursive call for both left and right child |
+| [543. Diameter of Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/DiameterOfBinaryTree.cs) | Easy | O(n) | O(n) | - For each node we need to identify max depth of left and right child <br /> - Calculate diameter as maxDepthLeft + maxDepthRight <br /> - Compare diameter with stored max value |
 
 ## Hints
 
