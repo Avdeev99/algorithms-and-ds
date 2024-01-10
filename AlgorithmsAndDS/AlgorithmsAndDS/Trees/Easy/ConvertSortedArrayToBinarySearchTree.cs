@@ -3,27 +3,22 @@ using ConsoleApp1.Helpers;
 
 namespace ConsoleApp1.Trees.Easy;
 
+// 108. Convert Sorted Array to Binary Search Tree
 public class ConvertSortedArrayToBinarySearchTree
 {
     // Time complexity: O(n); Space complexity: O(log(n)) - height of a tree.
-    public TreeNode SortedArrayToBST(int[] nums) {
-        if (nums.Length == 0)
-        {
-            return null;
-        }
+    public TreeNode SortedArrayToBST(int[] nums)
+    {
+        if (nums.Length == 0) return null;
 
-        var middleIndex = nums.Length / 2;
-        var node = new TreeNode
-        {
-            val = nums[middleIndex],
-        };
+        var mid = nums.Length / 2;
+        var leftSide = nums.Take(mid).ToArray();
+        var rightSide = nums.Skip(mid + 1).ToArray();
 
-        var leftSide = nums.Take(middleIndex).ToArray();
-        var rightSide = nums.Skip(middleIndex+1).ToArray();
+        var root = new TreeNode(nums[mid]);
+        root.left = SortedArrayToBST(leftSide);
+        root.right = SortedArrayToBST(rightSide);
 
-        node.left = SortedArrayToBST(leftSide);
-        node.right = SortedArrayToBST(rightSide);
-
-        return node;
+        return root;
     }
 }

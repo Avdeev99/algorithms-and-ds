@@ -3,6 +3,7 @@ using ConsoleApp1.Helpers;
 
 namespace ConsoleApp1.Trees.Easy;
 
+// 606. Construct String from Binary Tree
 public class ConstructStringFromBinaryTree
 {
     // Time complexity: O(n); Space complexity: O(n).
