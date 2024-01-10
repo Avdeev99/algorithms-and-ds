@@ -14,6 +14,7 @@
 - [Binary Search](#binary-search)
 - [Linked List](#linked-list)
 - [Trees](#trees)
+- [Priority Queue](#priority-queue)
 - [Hints](#hints)
 
 ## Arrays & Hashing
@@ -97,6 +98,7 @@
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [94. Binary Tree Inorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreeInorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any || currNode != null) <br /> - If currNode != null - push node to stack, go left  <br /> - If currNode == null - get prevNode from stack, add value to result,go the prevNode.right |
 | [100. Same Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/SameTree.cs) | Easy | O(n) | O(n) | Check that values of trees nodes are equal, use recursion to repeat for each node (left and right) |
+| [101. Symmetric Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/SymmetricTree.cs) | Easy | O(n) | O(h) | - Start to check from root left and right children <br /> - If both null - return true, if onle one is null - false, then if left.val != right.val - return false  <br /> - Then we need to check node1.left with node2.right and node1.right with node2.left (repeat recursively) |
 | [104. Maximum Depth of Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/MaximumDepthOfBinaryTree.cs) | Easy | O(n) | O(n) | - DFS iterative - use stack to store nodes and depth <br /> - BFS iterative - use queue to count levels <br /> - Recursion - return Max of recursive calls of left and right children + 1 |
 | [108. Convert Sorted Array to Binary Search Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/ConvertSortedArrayToBinarySearchTree.cs) | Easy | O(n) | O(log(n)) | - Use **Divide and Conquer** approach: mid value - node value, left subarray - left subtree, right subarray - right subtree <br /> - Use recursion for both left and right subtrees |
 | [110. Balanced Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/MaximumDepthOfBinaryTree.cs) | Easy | O(n) | O(n) | - Find max depth of left and right children <br /> - Difference should be <= 1 <br /> - Repeat recursively for each node, if diff is invalid - mark result flag|
@@ -107,6 +109,13 @@
 | [543. Diameter of Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/DiameterOfBinaryTree.cs) | Easy | O(n) | O(n) | - For each node we need to identify max depth of left and right child <br /> - Calculate diameter as maxDepthLeft + maxDepthRight <br /> - Compare diameter with stored max value |
 | [572. Subtree of Another Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/SubtreeOfAnotherTree.cs) | Easy | O(nm) | O(nm) | For each node where value = subroot.value we need to check if it is SameTree(problem 100) or node.left/node.right is SameTree as subroot |
 | [606. Construct String from Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/ConstructStringFromBinaryTree.cs) | Easy | O(n) | O(n) | Use DFS to recursively build string with PreOrder Traversal |
+
+## Priority Queue
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [703. Kth Largest Element in a Stream](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Easy/KthLargestElementInStream.cs) | Easy | O(log(n)) | O(k) | - Put elements to MinHeap always maintaining k elements  <br /> - During adding peek element from queue and compare with value, dequeue and enqueue new value if it is greater |
+| [1046. Last Stone Weight](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Easy/LastStoneWeight.cs) | Easy | O(nlog(n)) | O(n) | - Put all elements into a priority queue <br /> - Pop out the two biggest, push back the difference, until there are no more two elements left |
 
 ## Hints
 
