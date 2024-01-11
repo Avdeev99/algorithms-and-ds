@@ -48,14 +48,18 @@
 
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
+| [11. Container With Most Water](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Medium/ContainerWithMostWater.cs) | Medium | O(n) | O(1) | - Use two pointers: start, end <br /> - Calculate area, update maxArea var if needed, if left height is greater then right - decrease end pointer, otherwise - increase start pointer |
 | [26. Remove Duplicates from Sorted Array](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/RemoveDuplicatesFromSortedArray.cs) | Easy | O(n) | O(1) | - Maintain index to replace <br /> - Next item should be greater then previous |
-| [27. Remove Element](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/RemoveDuplicatesFromSortedArray.cs) | Easy | O(n) | O(1) | - Use two pointers (start, end) <br /> - If you find value - swap start and end values and decrease end pointer, otherwise - increase start pointer  |
+| [27. Remove Element](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/RemoveDuplicatesFromSortedArray.cs) | Easy | O(n) | O(1) | - Use two pointers (start, end) <br /> - If you find value - swap start and end values and decrease end pointer, otherwise - increase start pointer |
+| [80. Remove Duplicates from Sorted Array II](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Medium/RemoveDuplicatesFromSortedArrayII.cs) | Medium | O(n) | O(1) | - Use two pointers (i - iterate all items, indexToReplace) <br /> - Just go through the numbers and include those in the result that haven't been included twice already (nums[ i ] != nums[ indexToReplace - 2 ]) |
 | [88. Merge Sorted Array](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/MergeSortedArray.cs) | Easy | O(n+m) | O(1) | - Merge arrays in reverse order <br /> - Three pointers (last item of arr1, last item of arr2, last item of result arr)  <br /> - Compare values |
-| [125. Valid Palindrome](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/ValidPalindrome.cs) | Easy | O(N) | O(1) | - Two pointers (start, end) <br /> - Move each pointer untill value will be letter or digit  <br /> - If values are not equal - return false |
-| [283. Move Zeroes](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/MoveZeroes.cs) | Easy | O(N) | O(1) | - Maintain index to replace <br /> - Iterate array, swap non zero value with index to replace position  <br /> - Update index to replace |
-| [344. Reverse String](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/ReverseString.cs) | Easy | O(N) | O(1) | - Two pointers (start, end) <br /> - Swap chars |
-| [680. Valid Palindrome II](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/ValidPalindromeII.cs) | Easy | O(N) | O(1) | - Two pointers (start, end) <br /> - Move each pointer while values are equal  <br /> - If values are not equal - 2 options available: skip left character or right <br /> - Use helper method to check both options |
-| [1768. Merge Strings Alternately](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/MergeStringsAlternately.cs) | Easy | O(N) | O(n+m) | - Iterate to the end of smaller string, building result <br /> - Iterate larger string |
+| [125. Valid Palindrome](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/ValidPalindrome.cs) | Easy | O(n) | O(1) | - Two pointers (start, end) <br /> - Move each pointer untill value will be letter or digit  <br /> - If values are not equal - return false |
+| [167. Two Sum II - Input Array Is Sorted](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Medium/TwoSumII_InputArrayIsSorted.cs) | Medium | O(n) | O(1) | - Two pointers (left, right) <br /> - Calculate sum, if sum > target - decrease right pointer, sum < target - increase left pointer, sum = target - return indices |
+| [189. Rotate Array](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Medium/RotateArray.cs) | Medium | O(n) | O(1) | - Make k % nums.Length to avoid redundant rotations <br /> - Reverse whole array <br /> - Reverse only first k elements (those elements that we want to shift) <br /> - Reverse other elements after k elements |
+| [283. Move Zeroes](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/MoveZeroes.cs) | Easy | O(n) | O(1) | - Maintain index to replace <br /> - Iterate array, swap non zero value with index to replace position  <br /> - Update index to replace |
+| [344. Reverse String](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/ReverseString.cs) | Easy | O(n) | O(1) | - Two pointers (start, end) <br /> - Swap chars |
+| [680. Valid Palindrome II](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/ValidPalindromeII.cs) | Easy | O(n) | O(1) | - Two pointers (start, end) <br /> - Move each pointer while values are equal  <br /> - If values are not equal - 2 options available: skip left character or right <br /> - Use helper method to check both options |
+| [1768. Merge Strings Alternately](AlgorithmsAndDS/AlgorithmsAndDS/TwoPointers/Easy/MergeStringsAlternately.cs) | Easy | O(n) | O(n+m) | - Iterate to the end of smaller string, building result <br /> - Iterate larger string |
 
 ## Sliding Window
 
@@ -122,6 +126,7 @@
 - Find range sum/sum in array - prefix/postfix sum of array
 - Find item in sorted array - binary search
 - Move or remove elements in array - two pointers
+- Reversing array could help in rotating array by k elements
 
 ## Algorithms
 
