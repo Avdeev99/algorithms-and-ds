@@ -3,6 +3,7 @@ using System.Linq;
 
 namespace ConsoleApp1.ArraysAndHashing.Easy;
 
+// 496. Next Greater Element I
 public class NextGreaterElementI
 {
     // Time complexity: O(n+m); Space complexity: O(n+m)

@@ -3,6 +3,7 @@ using ConsoleApp1.Helpers;
 
 namespace ConsoleApp1.Trees.Easy;
 
+// 783. Minimum Distance Between BST Nodes
 public class MinimumDistanceBetweenBSTNodes
 {
     private int minDiff = int.MaxValue;
