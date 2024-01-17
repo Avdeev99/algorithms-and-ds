@@ -77,7 +77,11 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [20. Valid Parentheses](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Easy/ValidParentheses.cs) | Easy | O(n) | O(n) | - Push open braces to stack <br /> - If current item is closing breace, it should be the same type as top of the stack  <br /> - If it's true pop value and continue, otherwise - false |
+| [155. Min Stack](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/MinStack.cs) | Medium | O(1) | O(n) | - Use two stacks to store values and min values (or use one stack with tuple)  <br /> - While pushing new value, compare it with last min value in stack to identify new min |
 | [682. Baseball Game](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Easy/BaseballGame.cs) | Easy | O(n) | O(n) | - Push digits to stack <br /> - During operation, pop items, modify stack, calculateresult |
+| [739. Daily Temperatures](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/DailyTemperatures.cs) | Medium | O(n) | O(n) | - Iterate and push item and index to stack <br /> - While item > top in stack - calculate result subtracting indexes |
+| [946. Validate Stack Sequences](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/ValidateStackSequences.cs) | Easy | O(n) | O(n) | Iterate and push item to stack and check while stack.Peek() == popped item - pop from stack |
+| [2390. Removing Stars From a String](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/RemovingStarsFromString.cs) | Medium | O(n) | O(n) | Use stack to store all chars before *, pop from stack when it is * |
 
 ## Binary Search
 
@@ -95,6 +99,7 @@
 | [21. Merge Two Sorted Lists](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/MergeTwoSortedLists.cs) | Easy | O(n) | O(1) | Create dummy node, iterate while list1 & list2 != null, fill values, then do not forget larger list values |
 | [83. Remove Duplicates from Sorted List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/RemoveDuplicatesFromSortedList.cs) | Easy | O(n) | O(1) | Iterate the list, update pointers if curr.value == curr.next.val (or prev.val == curr.val) |
 | [141. Linked List Cycle](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/LinkedListCycle.cs) | Easy | O(n) | O(1) | Use slow and fast (2 x slow) pointers <br /> - If slow == fast, then cycle exists |
+| [143. Reorder List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/ReorderList.cs) | Medium | O(n) | O(1) | - Use slow and fast pointers to get mid item <br /> - Reverse second part of list <br /> - Using start pointer and last (will be available after reversing) to rearrange list |
 | [160. Intersection of Two Linked Lists](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/IntersectionOfTwoLinkedLists.cs) | Easy | O(n + m) | O(1) | - Use two pointers pointerA and pointerB <br /> - When pointerA will reach end, then pointerA = headB  <br /> - When pointerB will reach end, then pointerB = headA <br />  - When pointerA == pointerB - it's intersection |
 | [203. Remove Linked List Elements](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/RemoveLinkedListElements.cs) | Easy | O(n) | O(1) | - Create dummy node with next = head <br /> - Iterate with prev = dummy, curr = head <br /> - If curr.val == search val,then prev.next = curr.next |
 | [206. Reverse Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/ReverseLinkedList.cs) | Easy | O(n) | O(1) | Create two nodes, prev = null, curr = head <br /> - Iterate while curr != null and reverse pointers to prev node <br /> - Return prev node as new head |
