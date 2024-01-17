@@ -96,8 +96,11 @@
 
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
+| [19. Remove Nth Node From End of List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/RemoveNthNodeFromEndOfList.cs) | Medium | O(n) | O(1) | - Use one pointer (fast) and move it forward on N nodes <br /> - If fast == null, it means to remove head - return head.next <br /> - Use slow pointer from the begging and move slow and fast, until fast.next != null <br /> -  Slow pointer'll be before node to delete |
 | [21. Merge Two Sorted Lists](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/MergeTwoSortedLists.cs) | Easy | O(n) | O(1) | Create dummy node, iterate while list1 & list2 != null, fill values, then do not forget larger list values |
+| [61. Rotate List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/RotateList.cs) | Medium | O(n) | O(1) | - Find list length <br /> - Use k % length to avoid redundant operations <br /> - Use slow and fast pointers to get last node and previous node to K node from end <br /> - Move tail nodes to the beginning |
 | [83. Remove Duplicates from Sorted List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/RemoveDuplicatesFromSortedList.cs) | Easy | O(n) | O(1) | Iterate the list, update pointers if curr.value == curr.next.val (or prev.val == curr.val) |
+| [138. Copy List with Random Pointer](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/RemoveDuplicatesFromSortedList.cs) | Medium | O(n) | O(n) | Use **Dictionary** to store old node -> new node mappings <br /> |
 | [141. Linked List Cycle](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/LinkedListCycle.cs) | Easy | O(n) | O(1) | Use slow and fast (2 x slow) pointers <br /> - If slow == fast, then cycle exists |
 | [143. Reorder List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/ReorderList.cs) | Medium | O(n) | O(1) | - Use slow and fast pointers to get mid item <br /> - Reverse second part of list <br /> - Using start pointer and last (will be available after reversing) to rearrange list |
 | [160. Intersection of Two Linked Lists](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/IntersectionOfTwoLinkedLists.cs) | Easy | O(n + m) | O(1) | - Use two pointers pointerA and pointerB <br /> - When pointerA will reach end, then pointerA = headB  <br /> - When pointerB will reach end, then pointerB = headA <br />  - When pointerA == pointerB - it's intersection |
@@ -105,6 +108,7 @@
 | [206. Reverse Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/ReverseLinkedList.cs) | Easy | O(n) | O(1) | Create two nodes, prev = null, curr = head <br /> - Iterate while curr != null and reverse pointers to prev node <br /> - Return prev node as new head |
 | [234. Palindrome Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/PalindromeLinkedList.cs) | Easy | O(n) | O(1) | - Slow and fast pointer while fast?.next != null (slow pointer will be the middle) <br /> - Reverse second part of the list  <br /> - Compare values from start and end |
 | [876. Middle of the Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/MiddleOfTheLinkedList.cs) | Easy | O(n) | O(1) | Use slow and fast (2 x slow) pointers while fast?.next != null <br /> - Slow pointer will be the middle in the end |
+| [1721. Swapping Nodes in a Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/SwappingNodesInALinkedList.cs) | Medium | O(n) | O(1) | - Use pointer and move it on to K node - it will be Kth node from the beginning <br /> - Use existing pointer (fast) and create new from head (start) <br /> - Iterate until fast.next != null,then start pointer'll be Kth node from end <br /> - Swap values |
 
 ## Trees
 
