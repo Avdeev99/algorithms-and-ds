@@ -77,9 +77,11 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [20. Valid Parentheses](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Easy/ValidParentheses.cs) | Easy | O(n) | O(n) | - Push open braces to stack <br /> - If current item is closing breace, it should be the same type as top of the stack  <br /> - If it's true pop value and continue, otherwise - false |
+| [150. Evaluate Reverse Polish Notation](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Easy/ValidParentheses.cs) | Medium | O(n) | O(n) | - Iterate throuth tokens and push digits to stack <br /> - If curr item is operation, pop two values from stack, calculate and push to stack |
 | [155. Min Stack](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/MinStack.cs) | Medium | O(1) | O(n) | - Use two stacks to store values and min values (or use one stack with tuple)  <br /> - While pushing new value, compare it with last min value in stack to identify new min |
 | [682. Baseball Game](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Easy/BaseballGame.cs) | Easy | O(n) | O(n) | - Push digits to stack <br /> - During operation, pop items, modify stack, calculateresult |
 | [739. Daily Temperatures](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/DailyTemperatures.cs) | Medium | O(n) | O(n) | - Iterate and push item and index to stack <br /> - While item > top in stack - calculate result subtracting indexes |
+| [853. Car Fleet](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/CarFleet.cs) | Medium | O(n) | O(n) | - Sort array by position <br /> - Iterate from last position, calculate left hours to target <br /> - Use stack to store values, push if leftHours > stack.Peek, return stack count |
 | [946. Validate Stack Sequences](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/ValidateStackSequences.cs) | Easy | O(n) | O(n) | Iterate and push item to stack and check while stack.Peek() == popped item - pop from stack |
 | [2390. Removing Stars From a String](AlgorithmsAndDS/AlgorithmsAndDS/Stacks/Medium/RemovingStarsFromString.cs) | Medium | O(n) | O(n) | Use stack to store all chars before *, pop from stack when it is * |
 
@@ -91,7 +93,7 @@
 | [704. Binary Search](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Easy/BinarySearch.cs) | Easy | O(log(n)) | O(1) | - Two pointers (start, end) in sorted array <br /> - Calculate mid, if mid == target than return <br /> - Update left or right pointer according to mid |
 | [374. Guess Number Higher or Lower](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Easy/GuessNumberHigherOrLower.cs) | Easy | O(log(n)) | O(1) | - Binary search while l <= r <br /> - To compare mid value use guess function |
 | [441. Arranging Coins](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Easy/ArrangingCoins.cs) | Easy | O(log(n)) | O(1) | - Binary search while start <= end <br /> - Calculate sum of range 1...mid using formula: S = (n/2) * (1 + n) <br /> - Compare sum and n and update pointers <br /> - Since at the end start > end, start will start pointing to a value greater than the desired result. Return end as it will point to the correct value. |
-| [540. Single Element in a Sorted Array](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Medium/SingleElementInASortedArray.cs) | Easy | O(log(n)) | O(1) | - Binary search while start <= end <br />  - Calculate length of one side (without the same element), if it's odd - use this side to search, otherwise - another |
+| [540. Single Element in a Sorted Array](AlgorithmsAndDS/AlgorithmsAndDS/BinarySearch/Medium/SingleElementInASortedArray.cs) | Medium | O(log(n)) | O(1) | - Binary search while start <= end <br />  - Calculate length of one side (without the same element), if it's odd - use this side to search, otherwise - another |
 
 ## Linked List
 
