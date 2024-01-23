@@ -116,6 +116,7 @@
 | [234. Palindrome Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/PalindromeLinkedList.cs) | Easy | O(n) | O(1) | - Slow and fast pointer while fast?.next != null (slow pointer will be the middle) <br /> - Reverse second part of the list  <br /> - Compare values from start and end |
 | [725. Split Linked List in Parts](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/SplitLinkedListInParts.cs) | Medium | O(n) | O(n) | - Calculate list length, part size ( length / k), nodes remainder (length % k) <br /> - Iterate and create parts of calculated size + 1 (if remainder > 0) |
 | [876. Middle of the Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/MiddleOfTheLinkedList.cs) | Easy | O(n) | O(1) | Use slow and fast (2 x slow) pointers while fast?.next != null <br /> - Slow pointer will be the middle in the end |
+| [1472. Design Browser History](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/DesignBrowserHistory.cs) | Easy | O(n) - Back, Forward <br /> O(1) - visit | O(n) | Use double linked list to store history (or two stacks) |
 | [1721. Swapping Nodes in a Linked List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/SwappingNodesInALinkedList.cs) | Medium | O(n) | O(1) | - Use pointer and move it on to K node - it will be Kth node from the beginning <br /> - Use existing pointer (fast) and create new from head (start) <br /> - Iterate until fast.next != null,then start pointer'll be Kth node from end <br /> - Swap values |
 
 ## Trees
