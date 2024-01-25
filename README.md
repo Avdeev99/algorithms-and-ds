@@ -25,6 +25,7 @@
 | [14. Longest Common Prefix](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/LongestCommonPrefix.cs) | Easy | O(mn) | O(k) | - Iterate through all chars in first str (outer for) <br /> - Iterate through all strings and compare chars (inner for) <br /> - If you don't reach end of some str and chars are equal, add it to the prefix (after comparing char in all strs) |
 | [28. Find the Index of the First Occurrence in a String](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/FindTheIndexOfTheFirstOccurrenceInString.cs) | Easy | O(mn) | O(1) | |
 | [36. Valid Sudoku](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Medium/ValidSudoku.cs) | Easy | O(n^2) | O(n^2) | - Use dictionaries with hash set to store items for each row, column and subboard (i/3, j/3) <br /> - Iterate through all items, if item already exists in rows or cols or subboard[ i/3 ][ j/3 ] - return false |
+| [49. Group Anagrams](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Medium/GroupAnagrams.cs) | Medium | O(nm) | O(n) | - Use **Dictionary** to store groups <br /> - To calculate key, create char array of 26 items, iterate string and increment index of curr char (index = currChar - 'a'), convert char array to string <br /> - If current key already exists in dictionary, add string to values |
 | [58. Length of Last Word](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/LengthOfLastWord.cs) | Easy | O(n) | O(1) | - Iterate from the end and count non-space chars <br /> - The last word will end when counter > 0 and you reach space char |
 | [118. Pascal's Triangle](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Easy/PascalsTriangle.cs) | Easy | O(n^2) | O(n^2) | - First and last items of each row = 1 <br /> - Other j item in i row = arr[i-1][j-1] + arr[i-1][j] |
 | [128. Longest Consecutive Sequence](AlgorithmsAndDS/AlgorithmsAndDS/ArraysAndHashing/Medium/LongestConsecutiveSequence.cs) | Medium | O(n) | O(n) | - Write all nums in **HashSet* <br /> - Iterate array and skip num if set contains num+1 value, in order to find the biggest possible num to start <br /> - When biggest possible to start is found, count length while set contains num - 1 value |
@@ -141,6 +142,7 @@
 | [145. Binary Tree Postorder Traversal](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePostorderTraversal.cs) | Easy | O(n) | O(n) | - For iterative approach use stack (while stack.Any) to store node ond visited flag, push rootto stack <br /> - Pop from stack, if visited - add to result, otherwise - push curr as visited, left and right as not visited to stack |
 | [199. Binary Tree Right Side View](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Medium/BinaryTreeRightSideView.cs) | Easy | O(n) | O(n) | - Iteartive BFS using queue (level order traversal) <br /> - Push to queue right child, then left <br /> - Add to result just first item from queue |
 | [226. Invert Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/BinaryTreePostorderTraversal.cs) | Easy | O(n) | O(n) | - Check null, swap left and right children, recursive call for both left and right child |
+| [230. Kth Smallest Element in a BST](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Medium/KthSmallestElementInBST.cs) | Medium | O(h) | O(h) | - Use iterative In Order Traversal with stack <br /> - Stop traversal when you reach k-th element |
 | [543. Diameter of Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/DiameterOfBinaryTree.cs) | Easy | O(n) | O(n) | - For each node we need to identify max depth of left and right child <br /> - Calculate diameter as maxDepthLeft + maxDepthRight <br /> - Compare diameter with stored max value |
 | [572. Subtree of Another Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/SubtreeOfAnotherTree.cs) | Easy | O(nm) | O(nm) | For each node where value = subroot.value we need to check if it is SameTree(problem 100) or node.left/node.right is SameTree as subroot |
 | [606. Construct String from Binary Tree](AlgorithmsAndDS/AlgorithmsAndDS/Trees/Easy/ConstructStringFromBinaryTree.cs) | Easy | O(n) | O(n) | Use DFS to recursively build string with PreOrder Traversal |
@@ -150,8 +152,15 @@
 
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
+| [215. Kth Largest Element in an Array](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/KthLargestElementInAnArray.cs) | Medium | O(n + k*log(k)) | O(k) | Use MinHeap of greatest elements of nums or QuickSelect |
 | [703. Kth Largest Element in a Stream](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Easy/KthLargestElementInStream.cs) | Easy | O(log(n)) | O(k) | - Put elements to MinHeap always maintaining k elements  <br /> - During adding peek element from queue and compare with value, dequeue and enqueue new value if it is greater |
 | [1046. Last Stone Weight](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Easy/LastStoneWeight.cs) | Easy | O(nlog(n)) | O(n) | - Put all elements into a priority queue <br /> - Pop out the two biggest, push back the difference, until there are no more two elements left |
+
+## Backtracking
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [22. Generate Parentheses](AlgorithmsAndDS/AlgorithmsAndDS/Backtracking/Medium/GenerateParentheses.cs) | Medium | | | - Use helper backtracking method, try add open braces, then closing brace, after each adding - recursive call with updated braces counters <br /> - Don't forget that we can add closing brace only if quantity of possible to add is greater then open braces |
 
 ## Hints
 
@@ -160,6 +169,7 @@
 - Move or remove elements in array - two pointers
 - Reversing array could help in rotating array by k elements
 - Monotonic stack
+- Quick select
 
 ## Algorithms
 
