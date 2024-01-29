@@ -161,6 +161,14 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [22. Generate Parentheses](AlgorithmsAndDS/AlgorithmsAndDS/Backtracking/Medium/GenerateParentheses.cs) | Medium | | | - Use helper backtracking method, try add open braces, then closing brace, after each adding - recursive call with updated braces counters <br /> - Don't forget that we can add closing brace only if quantity of possible to add is greater then open braces |
+| [39. Combination Sum](AlgorithmsAndDS/AlgorithmsAndDS/Backtracking/Medium/CombinationSum.cs) | Medium | O(2^n) | | - Use helper backtracking method <br /> - Add result conditions: if curr sum > target - return, if equals - addcombination to result <br /> - Main part: call Backtrack to the same index, then pop item from combination and call Backtrack to the next item (use for loop for this or index) |
+| [79. Word Search](AlgorithmsAndDS/AlgorithmsAndDS/Backtracking/Medium/WordSearch.cs) | Medium | O(n * m * 4^n) | | - Use helper backtracking method <br /> - Iterate each item and find first letter of word and run Backtrack <br /> - In backtrack control indexes and that position wasn't visited yet and that word character equals to board char  <br /> - Call backtrack for all 4 possible pathes (top, bottom, left, right)  <br /> - Remove char from visited array |
+
+## Graphs
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [200. Number of Islands](AlgorithmsAndDS/AlgorithmsAndDS/Graphs/Medium/NumberOfIslands.cs) | Medium | O(n*m) | O(n*m) | - Iterate through array and run DFS if item == 1 and is not visited yet, and increase result count  <br /> - DFS: mark current cell as visited, run DFS for all directions (top, bottom, right, left) |
 
 ## Hints
 
