@@ -170,6 +170,7 @@
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [133. Clone Graph](AlgorithmsAndDS/AlgorithmsAndDS/Graphs/Medium/CloneGraph.cs) | Medium | O(n) | O(n) | - Use *Dictionary* to store node -> newNode mapping  <br /> - Create copy of node and save in dictionary, if doesn't exist <br /> Repeat copying for all children recursively (or use BFS with queue for iterative approach) |
 | [200. Number of Islands](AlgorithmsAndDS/AlgorithmsAndDS/Graphs/Medium/NumberOfIslands.cs) | Medium | O(n*m) | O(n*m) | - Iterate through array and run DFS if item == 1 and is not visited yet, and increase result count  <br /> - DFS: mark current cell as visited, run DFS for all directions (top, bottom, right, left) |
+| [207. Course Schedule](AlgorithmsAndDS/AlgorithmsAndDS/Graphs/Medium/CourseSchedule.cs) | Medium | O(n+p) | O(n+p) | - Using *Dictionary* create course -> prerequisite list mappings <br /> - For each course (0...num) run DFS <br /> - DFS: if prerequisite list is empty - return true (course can be passed); if course is visited - return false (loop); Run DFS for each prerequisite, after success clear prerequisite list and update visited courses |
 | [417. Pacific Atlantic Water Flow](AlgorithmsAndDS/AlgorithmsAndDS/Graphs/Medium/PacificAtlanticWaterFlow.cs) | Medium | O(n*m) | O(n*m) | - Run DFS from each Border item for both oceans and mark items as visited <br /> - Iterate grid and add to result item, if it was visited in both oceans |
 
 ## Hints
