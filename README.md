@@ -173,6 +173,14 @@
 | [207. Course Schedule](AlgorithmsAndDS/AlgorithmsAndDS/Graphs/Medium/CourseSchedule.cs) | Medium | O(n+p) | O(n+p) | - Using *Dictionary* create course -> prerequisite list mappings <br /> - For each course (0...num) run DFS <br /> - DFS: if prerequisite list is empty - return true (course can be passed); if course is visited - return false (loop); Run DFS for each prerequisite, after success clear prerequisite list and update visited courses |
 | [417. Pacific Atlantic Water Flow](AlgorithmsAndDS/AlgorithmsAndDS/Graphs/Medium/PacificAtlanticWaterFlow.cs) | Medium | O(n*m) | O(n*m) | - Run DFS from each Border item for both oceans and mark items as visited <br /> - Iterate grid and add to result item, if it was visited in both oceans |
 
+## Dynamic Programming
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [70. Climbing Stairs](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/ClimbingStairs.cs) | Easy | O(n) | O(1) | ClimbingStairs(n) = ClimbingStairs(n-1) + ClimbingStairs(n-2) (do not use recursion, use for loop starting from n = 3, because n1 = 1, n2 = 2) |
+| [121. Best Time to Buy and Sell Stock](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/BestTimeToBuyAndSellStock.cs) | Easy | O(n) | O(1) | - Use first item as price to buy, second as price to sell <br /> - If priceToSell < priceToBuy - move priceToBuy index (left pointer) to priceToSell index (right pointer), otherwise - calculate temp profit and compare with current max profit |
+| [1137. N-th Tribonacci Number](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/NTribonacciNumber.cs) | Easy | O(n) | O(1) | - If n == 0 - return 0, if n == 1 or n == 2 - return 1. For other values use three variables prev1 = 1, prev2 = 1, prev3 = 0. For each step from 3 up to N calculate sum of all vars and assign to prev1, move other variables |
+
 ## Hints
 
 - Find range sum/sum in array - prefix/postfix sum of array

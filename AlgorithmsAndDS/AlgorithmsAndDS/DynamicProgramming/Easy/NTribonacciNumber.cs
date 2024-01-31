@@ -1,5 +1,6 @@
 ﻿namespace ConsoleApp1.DynamicProgramming.Easy;
 
+// 1137. N-th Tribonacci Number
 public class NTribonacciNumber
 {
     // Time complexity: O(n); Space complexity: O(1).
