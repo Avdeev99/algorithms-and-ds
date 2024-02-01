@@ -179,6 +179,8 @@
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [70. Climbing Stairs](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/ClimbingStairs.cs) | Easy | O(n) | O(1) | ClimbingStairs(n) = ClimbingStairs(n-1) + ClimbingStairs(n-2) (do not use recursion, use for loop starting from n = 3, because n1 = 1, n2 = 2) |
 | [121. Best Time to Buy and Sell Stock](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/BestTimeToBuyAndSellStock.cs) | Easy | O(n) | O(1) | - Use first item as price to buy, second as price to sell <br /> - If priceToSell < priceToBuy - move priceToBuy index (left pointer) to priceToSell index (right pointer), otherwise - calculate temp profit and compare with current max profit |
+| [198. House Robber](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Medium/HouseRobber.cs) | Medium | O(n) | O(1) | - For each item calculate max possible rob value, for 0 item is always nums[0], for K element = Max(nums[k] + nums[k - 2], nums[k - 1]) |
+| [746. Min Cost Climbing Stairs](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/MinCostClimbingStairs.cs) | Easy | O(n) | O(1) | - Min cost for 0 item will be cost[0], for 1 - cost[1] (beacause we can jump on 1 or 2 stairs); for item 2 = cost[2] + min(costItem0, costItem1) <br /> - Calculate cost for each item and result will be the minimum of last and last - 1 items |
 | [1137. N-th Tribonacci Number](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/NTribonacciNumber.cs) | Easy | O(n) | O(1) | - If n == 0 - return 0, if n == 1 or n == 2 - return 1. For other values use three variables prev1 = 1, prev2 = 1, prev3 = 0. For each step from 3 up to N calculate sum of all vars and assign to prev1, move other variables |
 
 ## Hints
