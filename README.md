@@ -19,7 +19,8 @@
 - [Graphs](#graphs)
 - [Dynamic Programming](#dynamic-programming)
 - [Hints](#hints)
-- [Tries]()
+- [Tries](#tries)
+- [Math & Geometry](#math--geometry)
 
 ## Arrays & Hashing
 
@@ -197,6 +198,13 @@
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [208. Implement Trie (Prefix Tree)](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Trie.cs) | Medium | | | Create class TreeNode with boolean flag IsWord and Dictionary<char, TrieNode> Children; Use this class as root property in Trie class |
 | [211. Design Add and Search Words Data Structure](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Medium/DesignAddAndSearchWordsDataStructure.cs) | Medium | | | - Use Trie <br /> - In Search use DFS (if '.' search through all children) |
+
+## Math & Geometry
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [48. Rotate Image](AlgorithmsAndDS/AlgorithmsAndDS/Math/Medium/RotateImage.cs) | Medium | O(n^2) | O(1) | - Iterate matrix from bigger square to smaller square in center <br /> - If curr row = i and col = j, then newRow = j, newCol = rowsCount - i - 1 <br /> - For each square perform swap 4 times |
+| [54. Spiral Matrix](AlgorithmsAndDS/AlgorithmsAndDS/Math/Medium/SpiralMatrix.cs) | Medium | O(n*m) | O(1) | - Initialize top, bottom, left and right vars <br /> - Idea to add first row values, then last column values, then last rows values, then first column values <br /> - Update border vars and repeat |
+| [73. Set Matrix Zeroes](AlgorithmsAndDS/AlgorithmsAndDS/Math/Medium/SetMatrixZeroes.cs) | Medium | O(n*m) | O(1) | - Iterate through matrix, except 0 column and if curr == 0 then set first value in row and col to 0 - to identify <br /> - Iterate first column and if some value is 0 then set separate var to indicate that first col should be zero <br /> - Iterate through matrix bottom-up (from last value), except first column and set value to 0 if first value in row or col equals to 0  <br /> - Check col0 var and set first col to 0 if needed |
 
 ## Hints
 

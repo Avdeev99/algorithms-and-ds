@@ -1,8 +1,9 @@
-namespace AlgorithmsAndDS.System.Math.Medium;
+namespace AlgorithmsAndDS.Math.Medium;
 
 // 48. Rotate Image
 public class RotateImage
 {
+    // Time complexity: O(n^2); Space complexity: O(1).
     public void Rotate(int[][] matrix)
     {
         var rows = matrix.Length;
@@ -10,7 +11,7 @@ public class RotateImage
 
         for (var i = 0; i < rows - 1; i++)
         {
-            for (var j = i; j < cols - 1; j++)
+            for (var j = i; j < cols - 1 - i; j++)
             {
                 var r = i;
                 var c = j;

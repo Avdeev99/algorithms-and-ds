@@ -1,4 +1,4 @@
-﻿using AlgorithmsAndDS.System.Math.Medium;
+﻿using AlgorithmsAndDS.Math.Medium;
 
 var c = new RotateImage();
 c.Rotate(new []
