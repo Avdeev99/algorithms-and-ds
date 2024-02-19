@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace ConsoleApp1.PriorityQueue.Medium;
+namespace AlgorithmsAndDS.PriorityQueue.Medium;
 
 // 973. K Closest Points to Origin
 public class KClosestPointsToOrigin

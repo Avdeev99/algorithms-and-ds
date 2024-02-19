@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.TwoPointers.Easy;
+﻿namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // 26. Remove Duplicates from Sorted Array
 public class RemoveDuplicatesFromSortedArray

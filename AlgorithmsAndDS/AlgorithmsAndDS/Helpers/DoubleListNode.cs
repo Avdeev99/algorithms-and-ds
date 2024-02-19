@@ -1,4 +1,4 @@
-namespace ConsoleApp1.Helpers;
+namespace AlgorithmsAndDS.Helpers;
 
 public class DoubleListNode
 {

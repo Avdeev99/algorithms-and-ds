@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ConsoleApp1.TwoPointers.Easy;
+﻿namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // Time complexity: O(nlog(n)); Space complexity: O(1).
 public class MinimumDifferenceBetweenHighestAndLowestOfKScores

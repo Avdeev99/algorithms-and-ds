@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace ConsoleApp1.SlidingWindow.Medium;
+namespace AlgorithmsAndDS.SlidingWindow.Medium;
 
 // 3. Longest Substring Without Repeating Characters
 public class LongestSubstringWithoutRepeatingCharacters

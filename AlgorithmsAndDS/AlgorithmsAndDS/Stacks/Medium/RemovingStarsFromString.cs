@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using System.Text;
 
-namespace ConsoleApp1.Stacks.Medium;
+namespace AlgorithmsAndDS.Stacks.Medium;
 
 // 2390. Removing Stars From a String
 public class RemovingStarsFromString

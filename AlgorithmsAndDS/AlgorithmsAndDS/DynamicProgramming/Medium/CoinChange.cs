@@ -1,7 +1,6 @@
-using System;
 using System.Linq;
 
-namespace ConsoleApp1.DynamicProgramming.Medium;
+namespace AlgorithmsAndDS.DynamicProgramming.Medium;
 
 // 322. Coin Change
 public class CoinChange

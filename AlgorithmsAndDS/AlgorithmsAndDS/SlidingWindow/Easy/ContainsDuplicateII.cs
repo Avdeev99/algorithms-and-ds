@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ConsoleApp1.SlidingWindow.Easy;
+﻿namespace AlgorithmsAndDS.SlidingWindow.Easy;
 
 public class ContainsDuplicateII
 {

@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 929. Unique Email Addresses
 public class UniqueEmailAddresses

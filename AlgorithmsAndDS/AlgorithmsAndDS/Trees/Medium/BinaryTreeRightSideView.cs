@@ -1,8 +1,7 @@
-using System.Collections.Generic;
 using System.Linq;
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Medium;
+namespace AlgorithmsAndDS.Trees.Medium;
 
 // 199. Binary Tree Right Side View
 public class BinaryTreeRightSideView

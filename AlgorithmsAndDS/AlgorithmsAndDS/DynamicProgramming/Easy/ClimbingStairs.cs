@@ -1,4 +1,4 @@
-namespace ConsoleApp1.DynamicProgramming.Easy;
+namespace AlgorithmsAndDS.DynamicProgramming.Easy;
 
 // 70. Climbing Stairs
 public class ClimbingStairs

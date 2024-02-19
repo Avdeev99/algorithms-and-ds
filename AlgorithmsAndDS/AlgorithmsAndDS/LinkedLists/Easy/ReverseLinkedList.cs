@@ -1,6 +1,6 @@
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Easy;
+namespace AlgorithmsAndDS.LinkedLists.Easy;
 
 // 206. Reverse Linked List
 public class ReverseLinkedList

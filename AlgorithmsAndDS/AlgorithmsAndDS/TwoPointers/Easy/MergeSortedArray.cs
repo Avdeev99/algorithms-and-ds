@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.TwoPointers.Easy;
+﻿namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // 88. Merge Sorted Array
 public class MergeSortedArray

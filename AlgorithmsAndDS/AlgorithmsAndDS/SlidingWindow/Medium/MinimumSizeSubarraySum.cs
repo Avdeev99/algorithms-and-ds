@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ConsoleApp1.SlidingWindow.Medium;
+﻿namespace AlgorithmsAndDS.SlidingWindow.Medium;
 
 public class MinimumSizeSubarraySum
 {

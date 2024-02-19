@@ -1,6 +1,6 @@
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Easy;
+namespace AlgorithmsAndDS.Trees.Easy;
 
 // 572. Subtree of Another Tree
 public class SubtreeOfAnotherTree

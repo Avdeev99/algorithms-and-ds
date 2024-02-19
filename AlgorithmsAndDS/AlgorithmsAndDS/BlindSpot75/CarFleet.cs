@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace ConsoleApp1.BlindSpot75;
+﻿namespace AlgorithmsAndDS.BlindSpot75;
 
 public static class CarFleet
 {

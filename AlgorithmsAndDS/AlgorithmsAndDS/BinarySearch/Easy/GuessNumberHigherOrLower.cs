@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.BinarySearch.Easy;
+﻿namespace AlgorithmsAndDS.BinarySearch.Easy;
 
 // 374. Guess Number Higher or Lower
 public class GuessNumberHigherOrLower

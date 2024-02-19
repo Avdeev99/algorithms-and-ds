@@ -1,7 +1,7 @@
 ﻿using System.Linq;
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Easy;
+namespace AlgorithmsAndDS.Trees.Easy;
 
 // 108. Convert Sorted Array to Binary Search Tree
 public class ConvertSortedArrayToBinarySearchTree

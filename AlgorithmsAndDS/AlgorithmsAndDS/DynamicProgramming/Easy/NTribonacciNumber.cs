@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.DynamicProgramming.Easy;
+﻿namespace AlgorithmsAndDS.DynamicProgramming.Easy;
 
 // 1137. N-th Tribonacci Number
 public class NTribonacciNumber

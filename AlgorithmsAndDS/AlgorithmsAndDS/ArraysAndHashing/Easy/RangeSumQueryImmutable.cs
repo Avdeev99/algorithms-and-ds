@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.ArraysAndHashing.Easy;
+﻿namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 303. Range Sum Query - Immutable
 public class RangeSumQueryImmutable

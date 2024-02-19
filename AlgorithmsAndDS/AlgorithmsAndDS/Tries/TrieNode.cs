@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ConsoleApp1.TrieDS;
+﻿namespace AlgorithmsAndDS.Tries;
 
 public class TrieNode
 {

@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.BinarySearch.Easy;
+﻿namespace AlgorithmsAndDS.BinarySearch.Easy;
 
 // 35. Search Insert Position
 public class SearchInsertPosition

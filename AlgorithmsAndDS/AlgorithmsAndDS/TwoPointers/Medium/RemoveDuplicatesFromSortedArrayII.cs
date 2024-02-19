@@ -1,4 +1,4 @@
-namespace ConsoleApp1.TwoPointers.Medium;
+namespace AlgorithmsAndDS.TwoPointers.Medium;
 
 // 80. Remove Duplicates from Sorted Array II
 public class RemoveDuplicatesFromSortedArrayII

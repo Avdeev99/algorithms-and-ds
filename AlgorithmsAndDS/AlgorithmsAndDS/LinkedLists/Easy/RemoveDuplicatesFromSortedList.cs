@@ -1,6 +1,6 @@
-﻿using ConsoleApp1.Helpers;
+﻿using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Easy;
+namespace AlgorithmsAndDS.LinkedLists.Easy;
 
 // 83. Remove Duplicates from Sorted List
 public class RemoveDuplicatesFromSortedList

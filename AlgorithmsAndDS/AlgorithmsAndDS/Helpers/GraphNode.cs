@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp1.Helpers;
+namespace AlgorithmsAndDS.Helpers;
 
 public class GraphNode
 {

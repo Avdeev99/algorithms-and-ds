@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ConsoleApp1.Stacks.Easy;
+﻿namespace AlgorithmsAndDS.Stacks.Easy;
 
 // 682. Baseball Game
 public class BaseballGame

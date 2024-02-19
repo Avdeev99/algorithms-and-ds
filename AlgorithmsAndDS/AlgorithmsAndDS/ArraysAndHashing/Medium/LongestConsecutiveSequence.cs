@@ -1,7 +1,4 @@
-using System;
-using System.Collections.Generic;
-
-namespace ConsoleApp1.ArraysAndHashing.Medium;
+namespace AlgorithmsAndDS.ArraysAndHashing.Medium;
 
 // 128. Longest Consecutive Sequence
 public class LongestConsecutiveSequence

@@ -1,4 +1,4 @@
-namespace ConsoleApp1.TwoPointers.Easy;
+namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // 344. Reverse String
 public class ReverseString

@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp1.LinkedLists.Medium;
+namespace AlgorithmsAndDS.LinkedLists.Medium;
 
 // 138. Copy List with Random Pointer
 public class CopyListWithRandomPointer

@@ -1,6 +1,6 @@
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Medium;
+namespace AlgorithmsAndDS.LinkedLists.Medium;
 
 // 19. Remove Nth Node From End of List
 public class RemoveNthNodeFromEndOfList

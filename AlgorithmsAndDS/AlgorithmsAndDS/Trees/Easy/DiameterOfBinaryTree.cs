@@ -1,7 +1,6 @@
-using System;
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Easy;
+namespace AlgorithmsAndDS.Trees.Easy;
 
 // 543. Diameter of Binary Tree
 public class DiameterOfBinaryTree

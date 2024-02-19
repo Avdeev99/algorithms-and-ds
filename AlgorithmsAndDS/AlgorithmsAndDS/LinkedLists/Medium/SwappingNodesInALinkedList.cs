@@ -1,6 +1,6 @@
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Medium;
+namespace AlgorithmsAndDS.LinkedLists.Medium;
 
 // 1721. Swapping Nodes in a Linked List
 public class SwappingNodesInALinkedList

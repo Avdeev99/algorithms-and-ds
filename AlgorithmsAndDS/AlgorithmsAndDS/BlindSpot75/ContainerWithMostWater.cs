@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ConsoleApp1.BlindSpot75
+﻿namespace AlgorithmsAndDS.BlindSpot75
 {
     public static class ContainerWithMostWater
     {

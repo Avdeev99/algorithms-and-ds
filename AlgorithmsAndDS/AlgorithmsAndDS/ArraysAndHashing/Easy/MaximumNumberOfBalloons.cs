@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+﻿namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 1189. Maximum Number of Balloons
 public class MaximumNumberOfBalloons

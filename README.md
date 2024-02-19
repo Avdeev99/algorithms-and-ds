@@ -19,6 +19,7 @@
 - [Graphs](#graphs)
 - [Dynamic Programming](#dynamic-programming)
 - [Hints](#hints)
+- [Tries]()
 
 ## Arrays & Hashing
 
@@ -189,6 +190,13 @@
 | [322. Coin Change](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Medium/CoinChange.cs) | Medium | O(amount * len(coins)) | O(amount) | - Try to find coin change for each value from 1 to amount <br /> - Create dictionary with keys from 0 to amount, each value will be amount + 1 (or int.max), for 0 key - value also be 0 <br /> - Iterate from 1 to amount (outer loop) <br /> - Iterate through each coin (inner loop) <br /> - Find difference between value in outer loop and coin (i - coin) <br /> - If diff >= 0 then we could find solution as Math.Min(map[i], 1 + map[diff]) <br /> - Reaturn map[amount] or -1 |
 | [746. Min Cost Climbing Stairs](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/MinCostClimbingStairs.cs) | Easy | O(n) | O(1) | - Min cost for 0 item will be cost[0], for 1 - cost[1] (beacause we can jump on 1 or 2 stairs); for item 2 = cost[2] + min(costItem0, costItem1) <br /> - Calculate cost for each item and result will be the minimum of last and last - 1 items |
 | [1137. N-th Tribonacci Number](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/NTribonacciNumber.cs) | Easy | O(n) | O(1) | - If n == 0 - return 0, if n == 1 or n == 2 - return 1. For other values use three variables prev1 = 1, prev2 = 1, prev3 = 0. For each step from 3 up to N calculate sum of all vars and assign to prev1, move other variables |
+
+## Tries
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [208. Implement Trie (Prefix Tree)](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Trie.cs) | Medium | | | Create class TreeNode with boolean flag IsWord and Dictionary<char, TrieNode> Children; Use this class as root property in Trie class |
+| [211. Design Add and Search Words Data Structure](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Medium/DesignAddAndSearchWordsDataStructure.cs) | Medium | | | - Use Trie <br /> - In Search use DFS (if '.' search through all children) |
 
 ## Hints
 

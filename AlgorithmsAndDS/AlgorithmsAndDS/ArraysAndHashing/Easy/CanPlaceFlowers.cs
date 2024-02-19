@@ -1,4 +1,4 @@
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 605. Can Place Flowers
 public class CanPlaceFlowers

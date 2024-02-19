@@ -1,8 +1,7 @@
-using System.Collections.Generic;
 using System.Linq;
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Medium;
+namespace AlgorithmsAndDS.Trees.Medium;
 
 // 230. Kth Smallest Element in a BST
 public class KthSmallestElementInBST

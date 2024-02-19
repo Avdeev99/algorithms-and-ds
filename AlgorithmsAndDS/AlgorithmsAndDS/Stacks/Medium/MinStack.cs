@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.Stacks.Medium;
+namespace AlgorithmsAndDS.Stacks.Medium;
 
 // 155. Min Stack
 public class MinStack

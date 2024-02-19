@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.Backtracking.Medium;
+namespace AlgorithmsAndDS.Backtracking.Medium;
 
 // 39. Combination Sum
 public class CombinationSum

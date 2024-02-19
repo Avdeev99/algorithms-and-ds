@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 2215. Find the Difference of Two Arrays
 public class FindTheDifferenceOfTwoArrays

@@ -1,6 +1,4 @@
-using System;
-
-namespace ConsoleApp1.DynamicProgramming.Easy;
+namespace AlgorithmsAndDS.DynamicProgramming.Easy;
 
 // 746. Min Cost Climbing Stairs
 public class MinCostClimbingStairs

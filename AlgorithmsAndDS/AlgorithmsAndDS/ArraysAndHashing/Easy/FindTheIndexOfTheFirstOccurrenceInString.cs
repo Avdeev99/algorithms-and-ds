@@ -1,4 +1,4 @@
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 28. Find the Index of the First Occurrence in a String
 public class FindTheIndexOfTheFirstOccurrenceInString

@@ -1,5 +1,6 @@
-﻿namespace ConsoleApp1.TrieDS;
+﻿namespace AlgorithmsAndDS.Tries;
 
+// 208. Implement Trie (Prefix Tree)
 public class Trie
 {
     public Trie()

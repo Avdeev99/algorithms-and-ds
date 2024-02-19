@@ -1,4 +1,4 @@
-namespace ConsoleApp1.BinarySearch.Medium;
+namespace AlgorithmsAndDS.BinarySearch.Medium;
 
 // 33. Search in Rotated Sorted Array
 public class SearchInRotatedSortedArray

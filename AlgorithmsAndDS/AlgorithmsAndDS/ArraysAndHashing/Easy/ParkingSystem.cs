@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.ArraysAndHashing.Easy;
+﻿namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 1603. Design Parking System
 public class ParkingSystem

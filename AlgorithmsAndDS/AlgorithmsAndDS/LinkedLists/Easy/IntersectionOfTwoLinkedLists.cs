@@ -1,6 +1,6 @@
-﻿using ConsoleApp1.Helpers;
+﻿using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Easy;
+namespace AlgorithmsAndDS.LinkedLists.Easy;
 
 // 160. Intersection of Two Linked Lists
 public class IntersectionOfTwoLinkedLists

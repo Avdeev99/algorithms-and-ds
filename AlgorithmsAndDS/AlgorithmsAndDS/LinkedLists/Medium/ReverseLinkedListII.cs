@@ -1,6 +1,6 @@
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Medium;
+namespace AlgorithmsAndDS.LinkedLists.Medium;
 
 // 92. Reverse Linked List II
 public class ReverseLinkedListII

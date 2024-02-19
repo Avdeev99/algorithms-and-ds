@@ -1,6 +1,4 @@
-using System;
-
-namespace ConsoleApp1.DynamicProgramming.Medium;
+namespace AlgorithmsAndDS.DynamicProgramming.Medium;
 
 // 213. House Robber II
 public class HouseRobberII

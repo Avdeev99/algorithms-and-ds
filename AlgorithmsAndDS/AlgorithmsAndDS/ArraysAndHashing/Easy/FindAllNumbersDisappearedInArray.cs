@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+﻿namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 448. Find All Numbers Disappeared in an Array
 public static class FindAllNumbersDisappearedInArray

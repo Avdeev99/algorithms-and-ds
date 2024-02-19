@@ -1,4 +1,4 @@
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 169. Majority Element
 public class MajorityElement

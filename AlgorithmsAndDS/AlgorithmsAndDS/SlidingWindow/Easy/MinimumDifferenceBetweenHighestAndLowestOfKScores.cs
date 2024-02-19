@@ -1,6 +1,4 @@
-using System;
-
-namespace ConsoleApp1.SlidingWindow.Easy;
+namespace AlgorithmsAndDS.SlidingWindow.Easy;
 
 // 1984. Minimum Difference Between Highest and Lowest of K Scores
 public class MinimumDifferenceBetweenHighestAndLowestOfKScores

@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.PriorityQueue.Easy;
+namespace AlgorithmsAndDS.PriorityQueue.Easy;
 
 // 1046. Last Stone Weight
 public class LastStoneWeight

@@ -1,7 +1,6 @@
-using System.Collections.Generic;
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Graphs.Medium;
+namespace AlgorithmsAndDS.Graphs.Medium;
 
 // 133. Clone Graph
 public class CloneGraph

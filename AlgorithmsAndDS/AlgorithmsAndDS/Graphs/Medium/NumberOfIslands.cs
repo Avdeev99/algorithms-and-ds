@@ -1,4 +1,4 @@
-namespace ConsoleApp1.Graphs.Medium;
+namespace AlgorithmsAndDS.Graphs.Medium;
 
 // 200. Number of Islands
 public class NumberOfIslands

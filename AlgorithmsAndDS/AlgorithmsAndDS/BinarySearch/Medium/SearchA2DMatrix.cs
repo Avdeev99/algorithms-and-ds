@@ -1,4 +1,4 @@
-namespace ConsoleApp1.BinarySearch.Medium;
+namespace AlgorithmsAndDS.BinarySearch.Medium;
 
 // 74. Search a 2D Matrix
 public class SearchA2DMatrix

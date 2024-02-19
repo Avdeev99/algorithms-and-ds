@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.ArraysAndHashing.Easy;
+﻿namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 1822. Sign of the Product of an Array
 public class SignOfTheProductOfArray

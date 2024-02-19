@@ -1,4 +1,4 @@
-namespace ConsoleApp1.BinarySearch.Easy;
+namespace AlgorithmsAndDS.BinarySearch.Easy;
 
 // 704. Binary Search
 public class BinarySearch

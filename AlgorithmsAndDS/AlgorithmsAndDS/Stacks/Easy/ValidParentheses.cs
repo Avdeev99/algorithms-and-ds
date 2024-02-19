@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.Stacks.Easy;
+namespace AlgorithmsAndDS.Stacks.Easy;
 
 // 20. Valid Parentheses
 public class ValidParentheses

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 724. Find Pivot Index
 public class FindPivotIndex

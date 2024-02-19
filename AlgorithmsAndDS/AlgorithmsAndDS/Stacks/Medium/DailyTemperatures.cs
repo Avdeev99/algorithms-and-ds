@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.Stacks.Medium;
+namespace AlgorithmsAndDS.Stacks.Medium;
 
 // 739. Daily Temperatures
 public class DailyTemperatures

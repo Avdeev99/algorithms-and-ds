@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp1.ArraysAndHashing.Medium;
+namespace AlgorithmsAndDS.ArraysAndHashing.Medium;
 
 // 36. Valid Sudoku
 public class ValidSudoku

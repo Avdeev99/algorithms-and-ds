@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+﻿namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 290. Word Pattern
 public class WordPattern

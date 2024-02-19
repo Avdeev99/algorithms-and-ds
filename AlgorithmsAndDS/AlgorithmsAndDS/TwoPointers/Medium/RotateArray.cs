@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.TwoPointers.Medium;
+﻿namespace AlgorithmsAndDS.TwoPointers.Medium;
 
 // 189. Rotate Array
 public class RotateArray

@@ -1,4 +1,4 @@
-namespace ConsoleApp1.TwoPointers.Easy;
+namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // 27. Remove Element
 public class RemoveElement

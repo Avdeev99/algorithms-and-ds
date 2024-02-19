@@ -1,7 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
-namespace ConsoleApp1.ArraysAndHashing.Medium;
+namespace AlgorithmsAndDS.ArraysAndHashing.Medium;
 
 public class LargestNumber
 {

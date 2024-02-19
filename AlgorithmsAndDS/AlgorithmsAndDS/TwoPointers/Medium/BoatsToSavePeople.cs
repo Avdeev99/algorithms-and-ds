@@ -1,6 +1,4 @@
-using System;
-
-namespace ConsoleApp1.TwoPointers.Medium;
+namespace AlgorithmsAndDS.TwoPointers.Medium;
 
 // 881. Boats to Save People
 public class BoatsToSavePeople

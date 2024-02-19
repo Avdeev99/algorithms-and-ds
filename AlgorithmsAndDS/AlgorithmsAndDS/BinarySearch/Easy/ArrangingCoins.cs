@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ConsoleApp1.BinarySearch.Easy;
+﻿namespace AlgorithmsAndDS.BinarySearch.Easy;
 
 // 441. Arranging Coins
 public class ArrangingCoins

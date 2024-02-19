@@ -1,4 +1,4 @@
-namespace ConsoleApp1.Backtracking.Medium;
+namespace AlgorithmsAndDS.Backtracking.Medium;
 
 // 79. Word Search
 public class WordSearch

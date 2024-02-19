@@ -1,6 +1,6 @@
-﻿using ConsoleApp1.Helpers;
+﻿using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Easy;
+namespace AlgorithmsAndDS.Trees.Easy;
 
 public class MergeTwoBinaryTrees
 {

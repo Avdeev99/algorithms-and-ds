@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.Stacks.Medium;
+namespace AlgorithmsAndDS.Stacks.Medium;
 
 // 853. Car Fleet
 public class CarFleet

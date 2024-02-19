@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.Graphs.Medium;
+namespace AlgorithmsAndDS.Graphs.Medium;
 
 // 207. Course Schedule
 public class CourseSchedule

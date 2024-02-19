@@ -1,4 +1,4 @@
-namespace ConsoleApp1.TwoPointers.Easy;
+namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // 125. Valid Palindrome
 public class ValidPalindrome

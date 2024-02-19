@@ -1,8 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using ConsoleApp1.Helpers;
+﻿using System.Linq;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Easy;
+namespace AlgorithmsAndDS.Trees.Easy;
 
 // 144. Binary Tree Preorder Traversal
 public class BinaryTreePreorderTraversal

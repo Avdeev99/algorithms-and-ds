@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Linq;
 
-namespace ConsoleApp1.ArraysAndHashing.Medium;
+namespace AlgorithmsAndDS.ArraysAndHashing.Medium;
 
 // 49. Group Anagrams
 public class GroupAnagrams

@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace ConsoleApp1.SortingAlgorithms
+namespace AlgorithmsAndDS.SortingAlgorithms
 {
     public class MergeSortAlgorithm
     {

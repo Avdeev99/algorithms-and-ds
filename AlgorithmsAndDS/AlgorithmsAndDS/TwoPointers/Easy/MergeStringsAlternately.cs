@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace ConsoleApp1.TwoPointers.Easy;
+namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // 1768. Merge Strings Alternately
 public class MergeStringsAlternately

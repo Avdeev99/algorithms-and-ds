@@ -1,4 +1,4 @@
-namespace ConsoleApp1.TwoPointers.Medium;
+namespace AlgorithmsAndDS.TwoPointers.Medium;
 
 // 167. Two Sum II - Input Array Is Sorted
 public class TwoSumII_InputArrayIsSorted

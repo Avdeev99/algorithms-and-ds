@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp1.Stacks.Medium;
+namespace AlgorithmsAndDS.Stacks.Medium;
 
 // 150. Evaluate Reverse Polish Notation
 public class EvaluateReversePolishNotation

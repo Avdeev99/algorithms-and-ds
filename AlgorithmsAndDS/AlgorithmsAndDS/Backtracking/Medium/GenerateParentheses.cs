@@ -1,7 +1,6 @@
-using System.Collections.Generic;
 using System.Text;
 
-namespace ConsoleApp1.Backtracking.Medium;
+namespace AlgorithmsAndDS.Backtracking.Medium;
 
 public class GenerateParentheses
 {

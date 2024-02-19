@@ -1,6 +1,6 @@
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Medium;
+namespace AlgorithmsAndDS.LinkedLists.Medium;
 
 // 1472. Design Browser History
 // Space complexity: O(n).

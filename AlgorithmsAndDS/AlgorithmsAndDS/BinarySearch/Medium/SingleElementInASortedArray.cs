@@ -1,4 +1,4 @@
-namespace ConsoleApp1.BinarySearch.Medium;
+namespace AlgorithmsAndDS.BinarySearch.Medium;
 
 // 540. Single Element in a Sorted Array
 public class SingleElementInASortedArray

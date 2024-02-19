@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp1.Graphs.Medium;
+namespace AlgorithmsAndDS.Graphs.Medium;
 
 // 417. Pacific Atlantic Water Flow
 public class PacificAtlanticWaterFlow

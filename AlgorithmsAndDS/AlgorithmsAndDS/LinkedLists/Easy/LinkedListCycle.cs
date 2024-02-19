@@ -1,6 +1,6 @@
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Easy;
+namespace AlgorithmsAndDS.LinkedLists.Easy;
 
 // 141. Linked List Cycle
 public class LinkedListCycle

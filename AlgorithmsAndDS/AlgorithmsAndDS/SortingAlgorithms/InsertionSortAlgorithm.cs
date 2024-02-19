@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.SortingAlgorithms;
+﻿namespace AlgorithmsAndDS.SortingAlgorithms;
 
 public static class InsertionSortAlgorithm
 {

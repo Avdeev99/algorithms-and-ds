@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.Graphs.Easy;
+﻿namespace AlgorithmsAndDS.Graphs.Easy;
 
 public class IslandPerimeter
 {

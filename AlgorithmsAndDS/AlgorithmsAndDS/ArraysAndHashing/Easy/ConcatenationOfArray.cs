@@ -1,4 +1,4 @@
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 1929. Concatenation of Array
 public class ConcatenationOfArray

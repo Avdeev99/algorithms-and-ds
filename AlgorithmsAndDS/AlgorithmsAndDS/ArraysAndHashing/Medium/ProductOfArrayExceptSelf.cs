@@ -1,4 +1,4 @@
-namespace ConsoleApp1.ArraysAndHashing.Medium;
+namespace AlgorithmsAndDS.ArraysAndHashing.Medium;
 
 // 238. Product of Array Except Self
 public class ProductOfArrayExceptSelf

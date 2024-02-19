@@ -1,7 +1,6 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
-namespace ConsoleApp1.BlindSpot75;
+namespace AlgorithmsAndDS.BlindSpot75;
 
 public static class ReverseInteger
 {

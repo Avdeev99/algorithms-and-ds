@@ -1,6 +1,4 @@
-using System;
-
-namespace ConsoleApp1.TwoPointers.Medium;
+namespace AlgorithmsAndDS.TwoPointers.Medium;
 
 // 11. Container With Most Water
 public class ContainerWithMostWater

@@ -1,6 +1,4 @@
-using System;
-
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 1299. Replace Elements with Greatest Element on Right Side
 public class ReplaceElementsWithGreatestElementOnRightSide

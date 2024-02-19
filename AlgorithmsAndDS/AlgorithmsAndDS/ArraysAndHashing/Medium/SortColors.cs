@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp1.ArraysAndHashing.Medium;
+﻿namespace AlgorithmsAndDS.ArraysAndHashing.Medium;
 
 public class SortColors
 {

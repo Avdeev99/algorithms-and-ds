@@ -1,4 +1,4 @@
-namespace ConsoleApp1.TwoPointers.Easy;
+namespace AlgorithmsAndDS.TwoPointers.Easy;
 
 // 283. Move Zeroes
 public class MoveZeroes

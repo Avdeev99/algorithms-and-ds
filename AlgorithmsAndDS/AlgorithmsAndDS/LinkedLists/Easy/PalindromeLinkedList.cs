@@ -1,6 +1,6 @@
-﻿using ConsoleApp1.Helpers;
+﻿using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.LinkedLists.Easy;
+namespace AlgorithmsAndDS.LinkedLists.Easy;
 
 // 234. Palindrome Linked List
 public class PalindromeLinkedList

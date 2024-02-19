@@ -1,4 +1,4 @@
-namespace ConsoleApp1.ArraysAndHashing.Easy;
+namespace AlgorithmsAndDS.ArraysAndHashing.Easy;
 
 // 58. Length of Last Word
 public class LengthOfLastWord

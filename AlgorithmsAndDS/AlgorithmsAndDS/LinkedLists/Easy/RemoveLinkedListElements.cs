@@ -1,6 +1,6 @@
-﻿using ConsoleApp1.BlindSpot75;
+﻿using AlgorithmsAndDS.BlindSpot75;
 
-namespace ConsoleApp1.LinkedLists.Easy;
+namespace AlgorithmsAndDS.LinkedLists.Easy;
 
 // 203. Remove Linked List Elements
 public class RemoveLinkedListElements

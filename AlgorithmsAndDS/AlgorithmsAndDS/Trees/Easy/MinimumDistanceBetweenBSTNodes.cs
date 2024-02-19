@@ -1,7 +1,6 @@
-﻿using System;
-using ConsoleApp1.Helpers;
+﻿using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Easy;
+namespace AlgorithmsAndDS.Trees.Easy;
 
 // 783. Minimum Distance Between BST Nodes
 public class MinimumDistanceBetweenBSTNodes

@@ -1,8 +1,7 @@
-using System.Collections.Generic;
 using System.Linq;
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Medium;
+namespace AlgorithmsAndDS.Trees.Medium;
 
 // 102. Binary Tree Level Order Traversal
 public class BinaryTreeLevelOrderTraversal

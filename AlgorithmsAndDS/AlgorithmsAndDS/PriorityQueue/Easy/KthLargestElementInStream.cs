@@ -1,6 +1,4 @@
-using System.Collections.Generic;
-
-namespace ConsoleApp1.PriorityQueue.Easy;
+namespace AlgorithmsAndDS.PriorityQueue.Easy;
 
 // 703. Kth Largest Element in a Stream
 public class KthLargest

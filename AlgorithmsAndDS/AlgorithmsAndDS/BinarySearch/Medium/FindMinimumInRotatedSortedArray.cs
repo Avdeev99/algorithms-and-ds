@@ -1,4 +1,4 @@
-namespace ConsoleApp1.BinarySearch.Medium;
+namespace AlgorithmsAndDS.BinarySearch.Medium;
 
 // 153. Find Minimum in Rotated Sorted Array
 public class FindMinimumInRotatedSortedArray

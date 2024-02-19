@@ -1,7 +1,7 @@
 ﻿using System.Text;
-using ConsoleApp1.Helpers;
+using AlgorithmsAndDS.Helpers;
 
-namespace ConsoleApp1.Trees.Easy;
+namespace AlgorithmsAndDS.Trees.Easy;
 
 // 606. Construct String from Binary Tree
 public class ConstructStringFromBinaryTree
