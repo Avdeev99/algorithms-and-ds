@@ -79,6 +79,7 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [3. Longest Substring Without Repeating Characters](AlgorithmsAndDS/AlgorithmsAndDS/SlidingWindow/Medium/LongestSubstringWithoutRepeatingCharacters.cs) | Medium | O(n) | O(k) | - Use two pointers left and right starting from 0 position and **HashSet** to store chars <br /> - While right position char is in Set, remove left pointer char from set and increase left <br /> - After previous step all chars are unique - calculate max and continue until the end |
+| [424. Longest Repeating Character Replacement](AlgorithmsAndDS/AlgorithmsAndDS/SlidingWindow/Medium/LongestRepeatingCharacterReplacement.cs) | Medium | O(n) | O(1) | - Use two pointers left and right starting from 0 <br /> - While iterating add frequency of each character in **Dictionary** <br /> - Store max frequance as maxFreq <br /> - While currLength - maxFreq > k - decrease left pointer char frequency, increase left pointer <br /> - max(result, currLength) |
 | [1984. Minimum Difference Between Highest and Lowest of K Scores](AlgorithmsAndDS/AlgorithmsAndDS/SlidingWindow/Easy/MinimumDifferenceBetweenHighestAndLowestOfKScores.cs) | Easy | O(nlog(n)) | O(1) | - Sort array <br /> - Create sliding window of size k  <br /> - Calculate min diff between first and last items of window <br /> - Iterate and update min value |
 
 ## Stack
@@ -114,6 +115,7 @@
 | [2. Add Two Numbers](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/AddTwoNumbers.cs) | Medium | O(n) | O(n) | Don't forget to calulate value to add for next item (sum / 10), curr val = val % 10. Iterate while l1 != null || l2 != null || valueToadd > 0 |
 | [19. Remove Nth Node From End of List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/RemoveNthNodeFromEndOfList.cs) | Medium | O(n) | O(1) | - Use one pointer (fast) and move it forward on N nodes <br /> - If fast == null, it means to remove head - return head.next <br /> - Use slow pointer from the begging and move slow and fast, until fast.next != null <br /> -  Slow pointer'll be before node to delete |
 | [21. Merge Two Sorted Lists](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/MergeTwoSortedLists.cs) | Easy | O(n) | O(1) | Create dummy node, iterate while list1 & list2 != null, fill values, then do not forget larger list values |
+| [23. Merge k Sorted Lists](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Hard/MergeKSortedLists.cs) | Easy | O(n*log(n)) | O(n) | - Option 1: Add all nodes to **MinHeap**, while minHeap.Any - pop node, add to result, push node.next to queue <br /> - Option 2 (Divide and Conquer): use MergerTwoSortedLists function to merge all lists |
 | [61. Rotate List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/RotateList.cs) | Medium | O(n) | O(1) | - Find list length <br /> - Use k % length to avoid redundant operations <br /> - Use slow and fast pointers to get last node and previous node to K node from end <br /> - Move tail nodes to the beginning |
 | [83. Remove Duplicates from Sorted List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Easy/RemoveDuplicatesFromSortedList.cs) | Easy | O(n) | O(1) | Iterate the list, update pointers if curr.value == curr.next.val (or prev.val == curr.val) |
 | [86. Partition List](AlgorithmsAndDS/AlgorithmsAndDS/LinkedLists/Medium/PartitionList.cs) | Medium | O(n) | O(n) | - Use two linked lists to store smaller then x nodes and equals or bigger <br /> - Joins two lists together |
@@ -159,6 +161,8 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [215. Kth Largest Element in an Array](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/KthLargestElementInAnArray.cs) | Medium | O(n + k*log(k)) | O(k) | Use MinHeap of greatest elements of nums or QuickSelect |
+| [355. Design Twitter](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/Twitter.cs) | Medium | | | - Use **Dictionary** with **HashSet** to store user to followees mappings <br /> - Use LinkedList to store user tweets, most recent as head <br /> - GetNewsFeed: iterate through user followees and add each TweetHead to MaxHeap; while result < 10 or maxHeap.Any - pop Tweet from heap, add to result, push to MaxHeap Tweet.Next |
+| [621. Task Scheduler](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/TaskScheduler.cs) | Medium | O(n) | O(n) | |
 | [703. Kth Largest Element in a Stream](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Easy/KthLargestElementInStream.cs) | Easy | O(log(n)) | O(k) | - Put elements to MinHeap always maintaining k elements  <br /> - During adding peek element from queue and compare with value, dequeue and enqueue new value if it is greater |
 | [973. K Closest Points to Origin](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/KClosestPointsToOrigin.cs) | Medium | O(n*log(n)) | O(n) | - Calculate distance for each point and store it in MinHeap with distance as priority; return first k elements |
 | [1046. Last Stone Weight](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Easy/LastStoneWeight.cs) | Easy | O(nlog(n)) | O(n) | - Put all elements into a priority queue <br /> - Pop out the two biggest, push back the difference, until there are no more two elements left |
@@ -198,6 +202,7 @@
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [208. Implement Trie (Prefix Tree)](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Trie.cs) | Medium | | | Create class TreeNode with boolean flag IsWord and Dictionary<char, TrieNode> Children; Use this class as root property in Trie class |
 | [211. Design Add and Search Words Data Structure](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Medium/DesignAddAndSearchWordsDataStructure.cs) | Medium | | | - Use Trie <br /> - In Search use DFS (if '.' search through all children) |
+| [212. Word Search II](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Hard/WordSearchII.cs) | Hard | O(n * m * 4^n) | O(w * l) | - Use Trie to store all words <br /> - Iterate through board and use WordSearch Dfs to find words |
 
 ## Math & Geometry
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
@@ -214,6 +219,7 @@
 - Reversing array could help in rotating array by k elements
 - Monotonic stack
 - Quick select
+- Compare multiple items - use min/max heap (Merge K Sorted Lists)
 
 ## Algorithms
 
