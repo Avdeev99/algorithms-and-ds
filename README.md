@@ -20,6 +20,7 @@
 - [Dynamic Programming](#dynamic-programming)
 - [Hints](#hints)
 - [Tries](#tries)
+- [Intervals](#intervals)
 - [Math & Geometry](#math--geometry)
 
 ## Arrays & Hashing
@@ -203,6 +204,12 @@
 | [208. Implement Trie (Prefix Tree)](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Trie.cs) | Medium | | | Create class TreeNode with boolean flag IsWord and Dictionary<char, TrieNode> Children; Use this class as root property in Trie class |
 | [211. Design Add and Search Words Data Structure](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Medium/DesignAddAndSearchWordsDataStructure.cs) | Medium | | | - Use Trie <br /> - In Search use DFS (if '.' search through all children) |
 | [212. Word Search II](AlgorithmsAndDS/AlgorithmsAndDS/Tries/Hard/WordSearchII.cs) | Hard | O(n * m * 4^n) | O(w * l) | - Use Trie to store all words <br /> - Iterate through board and use WordSearch Dfs to find words |
+
+## Intervals
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [56. Merge Intervals](AlgorithmsAndDS/AlgorithmsAndDS/Intervals/Medium/MergeIntervals.cs) | Medium | O(n*log(n)) | O(n) | - Sort intervals by start value <br /> - Iterate intervals and compare first with second for overlapping (first[1] >= second[0]) |
 
 ## Math & Geometry
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
