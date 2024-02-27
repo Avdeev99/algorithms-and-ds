@@ -210,6 +210,7 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [56. Merge Intervals](AlgorithmsAndDS/AlgorithmsAndDS/Intervals/Medium/MergeIntervals.cs) | Medium | O(n*log(n)) | O(n) | - Sort intervals by start value <br /> - Iterate intervals and compare first with second for overlapping (first[1] >= second[0]) |
+| [57. Insert Interval](AlgorithmsAndDS/AlgorithmsAndDS/Intervals/Medium/InsertInterval.cs) | Medium | O(n) | O(n) | - Iterate intervals, if interval less then new - add to result, otherwise - merge intervals <br /> - If end of new interval less then start of interval - insert new interval |
 
 ## Math & Geometry
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
@@ -217,6 +218,16 @@
 | [48. Rotate Image](AlgorithmsAndDS/AlgorithmsAndDS/Math/Medium/RotateImage.cs) | Medium | O(n^2) | O(1) | - Iterate matrix from bigger square to smaller square in center <br /> - If curr row = i and col = j, then newRow = j, newCol = rowsCount - i - 1 <br /> - For each square perform swap 4 times |
 | [54. Spiral Matrix](AlgorithmsAndDS/AlgorithmsAndDS/Math/Medium/SpiralMatrix.cs) | Medium | O(n*m) | O(1) | - Initialize top, bottom, left and right vars <br /> - Idea to add first row values, then last column values, then last rows values, then first column values <br /> - Update border vars and repeat |
 | [73. Set Matrix Zeroes](AlgorithmsAndDS/AlgorithmsAndDS/Math/Medium/SetMatrixZeroes.cs) | Medium | O(n*m) | O(1) | - Iterate through matrix, except 0 column and if curr == 0 then set first value in row and col to 0 - to identify <br /> - Iterate first column and if some value is 0 then set separate var to indicate that first col should be zero <br /> - Iterate through matrix bottom-up (from last value), except first column and set value to 0 if first value in row or col equals to 0  <br /> - Check col0 var and set first col to 0 if needed |
+
+## Bit Manipulation
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [190. Reverse Bits](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Easy/ReverseBits.cs) | Easy | O(1) | O(1) | |
+| [191. Number of 1 Bits](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Easy/MissingNumber.cs) | Easy | O(k), k - number of 1 bits | O(1) | |
+| [268. Missing Number](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Easy/MissingNumber.cs) | Easy | O(n) | O(1) | |
+| [338. Counting Bits](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Easy/CountingBits.cs) | Easy | O(n) | O(1) | |
+| [371. Sum of Two Integers](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Medium/SumOfTwoIntegers.cs) | Medium | O(1) | O(1) | - We always need to make a ^ b and (a & b) << 1 <br /> - While b != 0, calculate XOR, calculate (a & b) << 1 and assign to b, assign XOR to a - Use XOR to simple add bits, use & and << to find additionals 1 bits |
 
 ## Hints
 
@@ -227,7 +238,13 @@
 - Monotonic stack
 - Quick select
 - Compare multiple items - use min/max heap (Merge K Sorted Lists)
+- Sum 1..n = n * (n + 1) / 2
 
 ## Algorithms
 
 - Boyer-Moore
+
+## Bit Manipulation Hints
+- 14 = { 1110 }2 = 1 * 23 + 1 * 22 + 1 * 21 + 0 * 20 = 14
+- Left Shift ( << ): Left shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the left and append 0 at the end. Left shift is equivalent to multiplying the bit pattern with 2^k (if we are shifting k bits).
+- Right Shift ( >> ): Right shift operator is a binary operator which shift the some number of bits, in the given bit pattern, to the right and append 1 at the end. Right shift is equivalent to dividing the bit pattern with 2^k (if we are shifting k bits).
