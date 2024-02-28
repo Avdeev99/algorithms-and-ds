@@ -22,6 +22,7 @@
 - [Tries](#tries)
 - [Intervals](#intervals)
 - [Math & Geometry](#math--geometry)
+- [Bit Manipulation](#bit-manipulation)
 
 ## Arrays & Hashing
 
@@ -162,6 +163,7 @@
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
 | [215. Kth Largest Element in an Array](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/KthLargestElementInAnArray.cs) | Medium | O(n + k*log(k)) | O(k) | Use MinHeap of greatest elements of nums or QuickSelect |
+| [295. Find Median from Data Stream](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Hard/FindMedianFromDataStream.cs) | Medium | Add: O(log(n)) <br /> - Find: O(1) | Add: O(n) <br /> - Find: O(1) | - Use maxheap to store first part of values, minheap - second <br /> - Always add values to maxheap, and then balance two heap: length diff should be <= 1 and maxHeap.Peek() <= minHeap.Peek()  |
 | [355. Design Twitter](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/Twitter.cs) | Medium | | | - Use **Dictionary** with **HashSet** to store user to followees mappings <br /> - Use LinkedList to store user tweets, most recent as head <br /> - GetNewsFeed: iterate through user followees and add each TweetHead to MaxHeap; while result < 10 or maxHeap.Any - pop Tweet from heap, add to result, push to MaxHeap Tweet.Next |
 | [621. Task Scheduler](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Medium/TaskScheduler.cs) | Medium | O(n) | O(n) | |
 | [703. Kth Largest Element in a Stream](AlgorithmsAndDS/AlgorithmsAndDS/PriorityQueue/Easy/KthLargestElementInStream.cs) | Easy | O(log(n)) | O(k) | - Put elements to MinHeap always maintaining k elements  <br /> - During adding peek element from queue and compare with value, dequeue and enqueue new value if it is greater |
