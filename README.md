@@ -23,6 +23,7 @@
 - [Intervals](#intervals)
 - [Math & Geometry](#math--geometry)
 - [Bit Manipulation](#bit-manipulation)
+- [Greedy](#greedy)
 
 ## Arrays & Hashing
 
@@ -191,6 +192,7 @@
 
 | Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
 | ------- | ---------- | --------------- | ---------------- | -------------- |
+| [5. Longest Palindromic Substring](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Medium/LongestPalindromicSubstring.cs) | Medium | O(n^2) | O(1) | - Iterate array, and check palindrome for each character - curr item is center, expan frmo center with two pointers (left, right); Edge Case - palindrome could be even or odd |
 | [70. Climbing Stairs](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/ClimbingStairs.cs) | Easy | O(n) | O(1) | ClimbingStairs(n) = ClimbingStairs(n-1) + ClimbingStairs(n-2) (do not use recursion, use for loop starting from n = 3, because n1 = 1, n2 = 2) |
 | [121. Best Time to Buy and Sell Stock](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Easy/BestTimeToBuyAndSellStock.cs) | Easy | O(n) | O(1) | - Use first item as price to buy, second as price to sell <br /> - If priceToSell < priceToBuy - move priceToBuy index (left pointer) to priceToSell index (right pointer), otherwise - calculate temp profit and compare with current max profit |
 | [198. House Robber](AlgorithmsAndDS/AlgorithmsAndDS/DynamicProgramming/Medium/HouseRobber.cs) | Medium | O(n) | O(1) | - For each item calculate max possible rob value, for 0 item is always nums[0], for K element = Max(nums[k] + nums[k - 2], nums[k - 1]) |
@@ -230,6 +232,13 @@
 | [268. Missing Number](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Easy/MissingNumber.cs) | Easy | O(n) | O(1) | |
 | [338. Counting Bits](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Easy/CountingBits.cs) | Easy | O(n) | O(1) | |
 | [371. Sum of Two Integers](AlgorithmsAndDS/AlgorithmsAndDS/BitManipulation/Medium/SumOfTwoIntegers.cs) | Medium | O(1) | O(1) | - We always need to make a ^ b and (a & b) << 1 <br /> - While b != 0, calculate XOR, calculate (a & b) << 1 and assign to b, assign XOR to a - Use XOR to simple add bits, use & and << to find additionals 1 bits |
+
+## Greedy
+
+| Problem | Complexity | Time Complexity | Space Complexity | Solution Hints |
+| ------- | ---------- | --------------- | ---------------- | -------------- |
+| [53. Maximum Subarray](AlgorithmsAndDS/AlgorithmsAndDS/Greedy/Medium/MaximumSubarray.cs) | Medium | O(n) | O(1) | - Iterate array, and count sum, if previous sum < 0 - then don't count it and currSum = current item; always update result value to max possible |
+| [55. Jump Game](AlgorithmsAndDS/AlgorithmsAndDS/Greedy/Medium/JumpGame.cs) | Medium | O(n) | O(1) | - Iterate array from the last-1 and the goal is last index <br /> - If we could reach goal from curr index, then goal after it = index <br /> - Result will be goal == 0 |
 
 ## Hints
 
