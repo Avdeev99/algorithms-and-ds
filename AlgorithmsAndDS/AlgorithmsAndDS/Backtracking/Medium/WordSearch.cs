@@ -3,7 +3,7 @@ namespace AlgorithmsAndDS.Backtracking.Medium;
 // 79. Word Search
 public class WordSearch
 {
-    // Time complexity: OO(n * m * 4^n)
+    // Time complexity: O(n * m * 4^n)
     public bool Exist(char[][] board, string word)
     {
         var rows = board.Length;
